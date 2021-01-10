@@ -1,0 +1,99 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-08T01:02:38.835Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10716000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.BeforeSteps(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Validate number of tabs on home page",
+        "description": "",
+        "id": "test-to-check-the-number-of-tabs-in-homepage;validate-number-of-tabs-on-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.afterSteps(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 417000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User on the homepage \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.TabsOnHomePage.user_on_the_homepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1960000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User validate homepage with title \"Sign up / Sign in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinations.TabsOnHomePage.user_validate_homepage_with_title(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 456000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify tabs on homepage",
+            "match": {
+              "location": "stepDefinations.TabsOnHomePage.verify_tabs_on_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HomePageTabs"
+          }
+        ]
+      }
+    ],
+    "name": "Test to check the number of tabs in homepage",
+    "description": "",
+    "id": "test-to-check-the-number-of-tabs-in-homepage",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GettheTabsInHomePage.feature",
+    "tags": []
+  }
+]
