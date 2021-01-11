@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -22,6 +23,7 @@ public class Hooks {
 		System.out.println("TestCase Execution started");
 		TestName=scenario.getName();
 		DriverUtils.createWordDoc(TestName);
+		
 		DriverUtils.setUp();
 		
 		
@@ -30,7 +32,7 @@ public class Hooks {
 	
 	@After()
 	public static void afterSteps(Scenario s) {
-	
+		
 	DriverUtils.driver.close();
 	System.out.println("Test case execution has been complted");
 	}

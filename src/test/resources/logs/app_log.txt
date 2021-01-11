@@ -1,8 +1,8 @@
-INFO    2021-01-08 02:02:38,296 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2021-01-08 02:02:38,305 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Fri_Jan_08_02_02_38_CET_2021.jpg
-INFO    2021-01-08 02:02:38,305 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2021-01-08 02:02:39,443 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate number of tabs on home pagedocument created
-INFO    2021-01-08 02:02:50,071 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2021-01-08 02:02:52,485 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
-INFO    2021-01-08 02:02:52,718 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
-INFO    2021-01-08 02:02:52,718 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Fri_Jan_08_02_02_52_CET_2021.jpg
+INFO    2021-01-11 01:07:09,257 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2021-01-11 01:07:09,268 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Mon_Jan_11_01_07_09_CET_2021.jpg
+INFO    2021-01-11 01:07:09,269 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2021-01-11 01:07:10,779 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate number of tabs on home pagedocument created
+INFO    2021-01-11 01:07:51,072 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2021-01-11 01:08:14,236 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
+INFO    2021-01-11 01:08:14,478 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
+INFO    2021-01-11 01:08:14,479 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Mon_Jan_11_01_08_14_CET_2021.jpg
