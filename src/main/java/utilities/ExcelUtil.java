@@ -10,7 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.annotations.Test;
+
 
 public class ExcelUtil {
 	private static String testDataExcel=new File("D:\\selenium\\Names.xlsx").getAbsolutePath();
@@ -58,15 +58,6 @@ public class ExcelUtil {
 		}	
 		
 	return testData;
-		
-	}
-	@Test
-	public static void dataMap1(){
-		dataMap=ExcelUtil.getTestData("This is TC 1", "b");
-		System.out.println(dataMap.get("Testcase"));
-		System.out.println(dataMap.get("username"));
-		System.out.println(dataMap.get("password"));
-		
 		
 	}
 }

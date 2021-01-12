@@ -1,7 +1,6 @@
 package runner;
 
 
-import java.io.File;
 import java.io.IOException;
 
 import org.junit.AfterClass;
@@ -16,8 +15,8 @@ import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import utilities.ConfigUtils;
-import utilities.DriverUtils;
+
+import utilities.*;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features",
@@ -26,7 +25,7 @@ tags="@HomePageTabs",
 plugin = { 
 "pretty", "html:target/HtmlReports/index.html",
 "json:target/JsonReports/cucumber.json",
-"junit:target/JunitReports/cucumber.xml",
+"junit:target/JunitReports/cucumber.xml","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 },
 monochrome = true
 		

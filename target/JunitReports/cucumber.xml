@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="65.141">
-<testcase classname="Test to check the number of tabs in homepage" name="Validate number of tabs on home page" time="64.51">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.539">
+<testcase classname="Test to check the number of tabs in homepage" name="Validate number of tabs on home page" time="12.125">
 <system-out><![CDATA[Given User on the homepage "https://www.carsguide.com.au/"..................passed
 When User validate homepage with title "Sign up / Sign in"..................passed
 Then Verify tabs on homepage................................................passed
