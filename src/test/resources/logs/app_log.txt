@@ -1,8 +1,10 @@
-INFO    2021-01-12 13:21:21,764 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2021-01-12 13:21:21,772 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Tue_Jan_12_13_21_21_CET_2021.jpg
-INFO    2021-01-12 13:21:21,772 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2021-01-12 13:21:22,786 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate number of tabs on home pagedocument created
-INFO    2021-01-12 13:21:32,316 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2021-01-12 13:21:34,151 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
-INFO    2021-01-12 13:21:34,360 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
-INFO    2021-01-12 13:21:34,360 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Tue_Jan_12_13_21_34_CET_2021.jpg
+INFO    2021-01-31 22:44:11,841 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2021-01-31 22:44:11,849 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Sun_Jan_31_22_44_11_CET_2021.jpg
+INFO    2021-01-31 22:44:11,849 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2021-01-31 22:44:12,686 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate search cars feature at home pagedocument created
+INFO    2021-01-31 22:44:21,931 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2021-01-31 22:44:23,506 [main] org.checkerframework.common.reflection.qual.GetClass  - User select the car brand
+INFO    2021-01-31 22:44:23,698 [main] org.checkerframework.common.reflection.qual.GetClass  - User select the car Model
+INFO    2021-01-31 22:44:26,354 [main] org.checkerframework.common.reflection.qual.GetClass  - User clicks on show me cars
+INFO    2021-01-31 22:44:31,518 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
+INFO    2021-01-31 22:44:31,519 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Sun_Jan_31_22_44_31_CET_2021.jpg

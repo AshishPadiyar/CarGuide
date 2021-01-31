@@ -1,10 +1,10 @@
-@searchcar
+
 Feature: Acceptence testing to validate search cars page is working
   Inorder to validate that search cars page is working fine
   we will do the acceptence testing
 
   # here you will write your user story
-
+	@searchcar
   Scenario: Validate search cars page
     Given I am on the home page of "https://www.carsguide.com.au/"
     When i move to the menu

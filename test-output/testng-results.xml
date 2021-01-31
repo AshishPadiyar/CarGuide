@@ -2,25 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="157" started-at="2021-01-12T12:09:48Z" finished-at="2021-01-12T12:09:49Z">
+  <suite name="Default suite" duration-ms="168" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_TestNG@3b0143d3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_TestNG@370736d9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="157" started-at="2021-01-12T12:09:48Z" finished-at="2021-01-12T12:09:49Z">
+    <test name="Default test" duration-ms="168" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
       <class name="runner.runner_TestNG">
-        <test-method status="FAIL" signature="setUpClass()[pri:0, instance:runner.runner_TestNG@3b0143d3]" name="setUpClass" is-config="true" duration-ms="127" started-at="2021-01-12T12:09:48Z" finished-at="2021-01-12T12:09:49Z">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method status="FAIL" signature="setUpClass()[pri:0, instance:runner.runner_TestNG@370736d9]" name="setUpClass" is-config="true" duration-ms="119" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[io.cucumber.testng.TestNGCucumberOptionsProvider$TestNGCucumberOptions.tags()[Ljava/lang/String;]]>
+              <![CDATA[io.cucumber.core.logging.Logger.debug(Ljava/util/function/Supplier;)V]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: io.cucumber.testng.TestNGCucumberOptionsProvider$TestNGCucumberOptions.tags()[Ljava/lang/String;
-at io.cucumber.core.options.CucumberOptionsAnnotationParser.addTags(CucumberOptionsAnnotationParser.java:95)
-at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:56)
-at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:73)
-at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:23)
+              <![CDATA[java.lang.NoSuchMethodError: io.cucumber.core.logging.Logger.debug(Ljava/util/function/Supplier;)V
+at io.cucumber.core.options.CucumberProperties.fromPropertiesFile(CucumberProperties.java:44)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:74)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:22)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -49,19 +48,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="SKIP" signature="before()[pri:0, instance:runner.runner_TestNG@3b0143d3]" name="before" is-config="true" duration-ms="0" started-at="2021-01-12T12:09:49Z" finished-at="2021-01-12T12:09:49Z">
+        <test-method status="SKIP" signature="before()[pri:0, instance:runner.runner_TestNG@370736d9]" name="before" is-config="true" duration-ms="0" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="SKIP" signature="writeReport()[pri:0, instance:runner.runner_TestNG@3b0143d3]" name="writeReport" is-config="true" duration-ms="0" started-at="2021-01-12T12:09:49Z" finished-at="2021-01-12T12:09:49Z">
+        <test-method status="SKIP" signature="writeReport()[pri:0, instance:runner.runner_TestNG@370736d9]" name="writeReport" is-config="true" duration-ms="0" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeReport -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.runner_TestNG@3b0143d3]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2021-01-12T12:09:49Z" finished-at="2021-01-12T12:09:49Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.runner_TestNG@370736d9]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

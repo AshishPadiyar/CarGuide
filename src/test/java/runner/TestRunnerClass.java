@@ -21,11 +21,11 @@ import utilities.*;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features",
 glue="stepDefinations",
-tags="@HomePageTabs",
+tags="@HomePage",
 plugin = { 
 "pretty", "html:target/HtmlReports/index.html",
 "json:target/JsonReports/cucumber.json",
-"junit:target/JunitReports/cucumber.xml","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+"junit:target/JunitReports/cucumber.xml"
 },
 monochrome = true
 		

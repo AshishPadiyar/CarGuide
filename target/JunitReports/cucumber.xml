@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.539">
-<testcase classname="Test to check the number of tabs in homepage" name="Validate number of tabs on home page" time="12.125">
-<system-out><![CDATA[Given User on the homepage "https://www.carsguide.com.au/"..................passed
-When User validate homepage with title "Sign up / Sign in"..................passed
-Then Verify tabs on homepage................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.627">
+<testcase classname="Test to check  car search funtionality in homepage" name="Validate search cars feature at home page" time="19.282">
+<system-out><![CDATA[Given I am on the home page "https://www.carsguide.com.au/".................passed
+When User at home page with title "Sign up / Sign in".......................passed
+And select car brand on homepage "BMW"......................................passed
+And select model on homepage "1 Series".....................................passed
+And click on show me cars...................................................passed
+Then i should see a list of searched cars using hompage search..............passed
+And the page title should is "Bmw 1 Series for Sale | carsguide"............passed
 ]]></system-out>
 </testcase>
 </testsuite>

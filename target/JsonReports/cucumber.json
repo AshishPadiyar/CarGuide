@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-01-12T12:21:22.193Z",
+        "start_timestamp": "2021-01-31T21:44:12.193Z",
         "before": [
           {
             "result": {
-              "duration": 9560000000,
+              "duration": 9315000000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 6,
-        "name": "Validate number of tabs on home page",
+        "name": "Validate search cars feature at home page",
         "description": "",
-        "id": "test-to-check-the-number-of-tabs-in-homepage;validate-number-of-tabs-on-home-page",
+        "id": "test-to-check--car-search-funtionality-in-homepage;validate-search-cars-feature-at-home-page",
         "after": [
           {
             "result": {
-              "duration": 166000000,
+              "duration": 4482000000,
               "status": "passed"
             },
             "match": {
@@ -35,65 +35,131 @@
         "steps": [
           {
             "result": {
-              "duration": 453000000,
+              "duration": 345000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "User on the homepage \"https://www.carsguide.com.au/\"",
+            "name": "I am on the home page \"https://www.carsguide.com.au/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"https://www.carsguide.com.au/\"",
-                  "offset": 21
+                  "offset": 22
                 }
               ],
-              "location": "stepDefinations.TabsOnHomePage.user_on_the_homepage(java.lang.String)"
+              "location": "stepDefinations.SearchCarsOnHomePage.i_am_on_the_home_page(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1528000000,
+              "duration": 1359000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "User validate homepage with title \"Sign up / Sign in\"",
+            "name": "User at home page with title \"Sign up / Sign in\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Sign up / Sign in\"",
-                  "offset": 34
+                  "offset": 29
                 }
               ],
-              "location": "stepDefinations.TabsOnHomePage.user_validate_homepage_with_title(java.lang.String)"
+              "location": "stepDefinations.SearchCarsOnHomePage.User_at_home_page_with_title(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 307000000,
+              "duration": 216000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "Verify tabs on homepage",
+            "name": "select car brand on homepage \"BMW\"",
             "match": {
-              "location": "stepDefinations.TabsOnHomePage.verify_tabs_on_homepage()"
+              "arguments": [
+                {
+                  "val": "\"BMW\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinations.SearchCarsOnHomePage.select_car_brand_on_homepage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "select model on homepage \"1 Series\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1 Series\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinations.SearchCarsOnHomePage.select_model_on_homepage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2656000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on show me cars",
+            "match": {
+              "location": "stepDefinations.SearchCarsOnHomePage.click_on_show_me_cars()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i should see a list of searched cars using hompage search",
+            "match": {
+              "location": "stepDefinations.SearchCarsOnHomePage.i_should_see_a_list_of_searched_cars_using_hompage_search()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 636000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the page title should is \"Bmw 1 Series for Sale | carsguide\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bmw 1 Series for Sale | carsguide\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinations.SearchCarsOnHomePage.the_page_title_should_is(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@HomePageTabs"
+            "name": "@HomePage"
           }
         ]
       }
     ],
-    "name": "Test to check the number of tabs in homepage",
+    "name": "Test to check  car search funtionality in homepage",
     "description": "",
-    "id": "test-to-check-the-number-of-tabs-in-homepage",
+    "id": "test-to-check--car-search-funtionality-in-homepage",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/GettheTabsInHomePage.feature",
+    "uri": "file:src/test/resources/features/HomePageSearchCars.feature",
     "tags": []
   }
 ]

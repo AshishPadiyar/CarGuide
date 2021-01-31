@@ -58,21 +58,7 @@
 
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 	
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports-cucumber4-adapter</artifactId>
-			<version>1.0.12</version>
-			<exclusions>
-				<exclusion>
-					<groupId>io.cucumber</groupId>
-					<artifactId>cucumber-java</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>io.cucumber</groupId>
-					<artifactId>cucumber-core</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+		
 
 
 		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
@@ -99,13 +85,7 @@
 			<version>6.14.3</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/junit/junit -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.13</version>
-			<scope>test</scope>
-		</dependency>
+		
 
 
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
@@ -141,7 +121,14 @@
 		</dependency>
 
 		
-		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13</version>
+			<scope>test</scope>
+		</dependency>
+
+
 		<dependency>
 		    <groupId>io.cucumber</groupId>
 		    <artifactId>cucumber-java</artifactId>
@@ -166,28 +153,6 @@
 			<version>5.7.0</version>
 		</dependency>
 		
-		<dependency>
-		    <groupId>info.cukes</groupId>
-		    <artifactId>cucumber-jvm</artifactId>
-		    <version>1.2.5</version>
-		    <type>pom</type>
-		</dependency>
-		<dependency>
-	    <groupId>info.cukes</groupId>
-	    <artifactId>cucumber-picocontainer</artifactId>
-	    <version>1.2.5</version>
-	    <scope>test</scope>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
-			<dependency>
-			    <groupId>org.apache.commons</groupId>
-			    <artifactId>commons-lang3</artifactId>
-			    <version>3.9</version>
-			</dependency>
-		
-		
-		
 		
 		
 		
@@ -201,9 +166,25 @@
 		<!-- ######################## Latest Extent REports ############################# -->
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		
-
+<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports-cucumber4-adapter</artifactId>
+			<version>1.0.12</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-java</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>io.cucumber</groupId>
+					<artifactId>cucumber-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
 	</dependencies>
+	
+	
 	
 	
 	<build>
@@ -213,29 +194,29 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
+					<!-- put your configurations here -->
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
 			</plugin>
 
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.18.1</version>
+				<version>3.0.0-M5</version>
 				<configuration>
-					<testFailureIgnore>true</testFailureIgnore>
+					<testFailureIgnore>false</testFailureIgnore>
+					<suiteXmlFiles>
+						<suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-			
-			
-			<!-- Latest Cucumber JVM Reports Plugin-->
-			
-
+			<!-- Latest cucumber JVM Reports plugin -->
 			<plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>5.0.0</version>
-
+				<version>5.3.0</version>
 				<executions>
 					<execution>
 						<id>execution</id>
@@ -244,9 +225,9 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>CarGuideProject</projectName> <!-- Replace with project name -->
+							<projectName>CarGuideProject</projectName>
 							<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
-							<cucumberOutput>target/cucumber-reports/cucumber.json</cucumberOutput>
+							<cucumberOutput>target/cucumber-reports/report.json</cucumberOutput>
 							<buildNumber>1</buildNumber>
 							<parallelTesting>false</parallelTesting>
 							<skip>false</skip>
@@ -259,13 +240,8 @@
 						</configuration>
 					</execution>
 				</executions>
-
-
-
 			</plugin>
-
 		</plugins>
 	</build>
-  
   
 </project>
