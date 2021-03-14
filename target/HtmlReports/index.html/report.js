@@ -1,18 +1,13 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/HomePageSearchCars.feature");
 formatter.feature({
-  "name": "Test to check  car search funtionality in homepage",
+  "name": "Test to check  car search functionality in homepage",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Validate search cars feature at home page",
+formatter.background({
+  "name": "Navigate to carguide site",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@HomePage"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
@@ -37,52 +32,32 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "To check Footer Links on hompage",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@HomePage"
+    }
+  ]
+});
 formatter.step({
-  "name": "select car brand on homepage \"BMW\"",
+  "name": "user scrolls to the button of the page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepDefinations.SearchCarsOnHomePage.select_car_brand_on_homepage(java.lang.String)"
+  "location": "stepDefinations.SearchCarsOnHomePage.user_scrolls_to_the_button_of_the_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "select model on homepage \"1 Series\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepDefinations.SearchCarsOnHomePage.select_model_on_homepage(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click on show me cars",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepDefinations.SearchCarsOnHomePage.click_on_show_me_cars()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "i should see a list of searched cars using hompage search",
+  "name": "User fetch the name of all the links",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepDefinations.SearchCarsOnHomePage.i_should_see_a_list_of_searched_cars_using_hompage_search()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the page title should is \"Bmw 1 Series for Sale | carsguide\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepDefinations.SearchCarsOnHomePage.the_page_title_should_is(java.lang.String)"
+  "location": "stepDefinations.SearchCarsOnHomePage.user_fetch_the_name_of_all_the_links()"
 });
 formatter.result({
   "status": "passed"

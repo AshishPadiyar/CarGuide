@@ -1,5 +1,6 @@
 package stepDefinations;
 
+import java.sql.Driver;
 import java.util.HashMap;
 import java.util.List;
 
@@ -83,4 +84,44 @@ public class SearchCarsOnHomePage {
 		
 		Assert.assertEquals(actual, expected);
 	}
+	
+	@When("user scrolls the window till populer review")
+	public void user_scrolls_the_window_till_populer_review() {
+		carsGuideHomePageActions.Scroll();
+	}
+
+
+	@Then("user selects review of {string}")
+	public void user_selects_review_of_car(String car) {
+	carsGuideHomePageActions.GetCarName(car);
+
+	}
+
+	@And("user verify the page title for {string}")
+	public void user_verify_the_page_title_for_car(String car) {
+
+		String varCarTitle=carsGuideHomePageActions.GetCarTitle();
+		System.out.println("Car title for " +car+ " is " + varCarTitle);
+	}
+
+	@Then("user try to search for {string}")
+	public void user_try_to_search_for_car(String car) {
+		carsGuideHomePageActions.CarSearchTextBox(car);
+
+	}
+
+
+	@And("user scrolls to the button of the page")
+	public void user_scrolls_to_the_button_of_the_page() {
+		DriverUtils.ScrollToButtom();
+		System.out.println("User at the button of the page");
+	}
+
+	@Then("User fetch the name of all the links")
+	public void user_fetch_the_name_of_all_the_links() {
+		carsGuideHomePageActions.HomePageFooters();
+
+	}
+
+	
 }

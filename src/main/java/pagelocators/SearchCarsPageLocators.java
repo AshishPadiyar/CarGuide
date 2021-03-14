@@ -10,7 +10,7 @@ public class SearchCarsPageLocators {
 	//css="select[id='makes']"
 	public WebElement selectMake;
 	
-	@FindBy(id="models")
+	@FindBy(xpath = "//*[@id='models']")
 	public WebElement selectModel;
 	
 	@FindBy(id="locations")

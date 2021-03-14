@@ -25,9 +25,6 @@ public class Hooks {
 		DriverUtils.createWordDoc(TestName);
 		
 		DriverUtils.setUp();
-		
-		
-		
 	}
 	
 	
@@ -40,4 +37,4 @@ public class Hooks {
 }
 
 //hooks can only be added to step definitions package , as it has to run before or after each scenario
-//we can specify to which scenaio or feature file we need these hooks by tagging hooks to feature or scenario
+//we can specify to which scenario or feature file we need these hooks by tagging hooks to feature or scenario

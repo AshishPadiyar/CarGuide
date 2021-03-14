@@ -1,10 +1,7 @@
-INFO    2021-01-31 22:44:11,841 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2021-01-31 22:44:11,849 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Sun_Jan_31_22_44_11_CET_2021.jpg
-INFO    2021-01-31 22:44:11,849 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2021-01-31 22:44:12,686 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate search cars feature at home pagedocument created
-INFO    2021-01-31 22:44:21,931 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2021-01-31 22:44:23,506 [main] org.checkerframework.common.reflection.qual.GetClass  - User select the car brand
-INFO    2021-01-31 22:44:23,698 [main] org.checkerframework.common.reflection.qual.GetClass  - User select the car Model
-INFO    2021-01-31 22:44:26,354 [main] org.checkerframework.common.reflection.qual.GetClass  - User clicks on show me cars
-INFO    2021-01-31 22:44:31,518 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
-INFO    2021-01-31 22:44:31,519 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Sun_Jan_31_22_44_31_CET_2021.jpg
+INFO    2021-03-14 15:54:16,376 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2021-03-14 15:54:16,382 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Sun_Mar_14_15_54_16_CET_2021.jpg
+INFO    2021-03-14 15:54:16,383 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2021-03-14 15:54:17,580 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Footer Links on hompagedocument created
+INFO    2021-03-14 15:54:24,847 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2021-03-14 15:54:28,181 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
+INFO    2021-03-14 15:54:28,181 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Sun_Mar_14_15_54_28_CET_2021.jpg

@@ -20,15 +20,16 @@ import utilities.*;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features",
-glue="stepDefinations",
+monochrome = true,
+glue="stepDefinations",stepNotifications = true,
 tags="@HomePage",
 plugin = { 
 "pretty", "html:target/HtmlReports/index.html",
 "json:target/JsonReports/cucumber.json",
 "junit:target/JunitReports/cucumber.xml"
-},
-monochrome = true
-		
+}
+
+
 		)
 
 //"com.cucumber.listener.ExTentCucumberFormatter:target/cucumber-reports/report.html"

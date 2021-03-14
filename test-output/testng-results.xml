@@ -1,36 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="1" failed="1" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="168" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
+  <suite name="Default suite" duration-ms="53943" started-at="2021-02-24T20:46:15Z" finished-at="2021-02-24T20:47:09Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_TestNG@370736d9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_TestNG@63753b6d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="168" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
+    <test name="Default test" duration-ms="53943" started-at="2021-02-24T20:46:15Z" finished-at="2021-02-24T20:47:09Z">
       <class name="runner.runner_TestNG">
-        <test-method status="FAIL" signature="setUpClass()[pri:0, instance:runner.runner_TestNG@370736d9]" name="setUpClass" is-config="true" duration-ms="119" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.runner_TestNG@63753b6d]" name="setUpClass" is-config="true" duration-ms="417" started-at="2021-02-24T20:46:15Z" finished-at="2021-02-24T20:46:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="before()[pri:0, instance:runner.runner_TestNG@63753b6d]" name="before" is-config="true" duration-ms="51" started-at="2021-02-24T20:46:16Z" finished-at="2021-02-24T20:46:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_TestNG@63753b6d]" name="runScenario" duration-ms="10901" started-at="2021-02-24T20:46:16Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-24T20:46:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate number of tabs on home page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test to check the number of tabs in homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_TestNG@63753b6d]" name="runScenario" duration-ms="11419" started-at="2021-02-24T20:46:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-24T20:46:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate search cars feature at home page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test to check  car search funtionality in homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_TestNG@63753b6d]" name="runScenario" duration-ms="8967" started-at="2021-02-24T20:46:38Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-24T20:46:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check Most populer Reviews"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test to check  car search funtionality in homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="SKIP" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_TestNG@63753b6d]" name="runScenario" duration-ms="7917" started-at="2021-02-24T20:46:47Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-24T20:46:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check Most populer Reviews"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To check Most populer Reviews on the site"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
             <message>
-              <![CDATA[io.cucumber.core.logging.Logger.debug(Ljava/util/function/Supplier;)V]]>
+              <![CDATA[The step "When user is o" is undefined. You can implement it using the snippet(s) below:
+
+@Given("When user is o")
+public void when_user_is_o() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: io.cucumber.core.logging.Logger.debug(Ljava/util/function/Supplier;)V
-at io.cucumber.core.options.CucumberProperties.fromPropertiesFile(CucumberProperties.java:44)
-at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:74)
-at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:22)
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step "When user is o" is undefined. You can implement it using the snippet(s) below:
+
+@Given("When user is o")
+public void when_user_is_o() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$2(TestCaseResultObserver.java:26)
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:110)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:21)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -48,19 +131,48 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="SKIP" signature="before()[pri:0, instance:runner.runner_TestNG@370736d9]" name="before" is-config="true" duration-ms="0" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runner_TestNG@63753b6d]" name="runScenario" duration-ms="13909" started-at="2021-02-24T20:46:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-24T20:47:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate search cars page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptence testing to validate search cars page is working"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [BMW 1 Series] but found [Bmw 1 Series Under 40000 for Sale Central Coast NSW | carsguide]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [BMW 1 Series] but found [Bmw 1 Series Under 40000 for Sale Central Coast NSW | carsguide]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at stepDefinations.SearchCarsStepDef.the_page_title_should_be(SearchCarsStepDef.java:101)
+at ✽.the page title should be "BMW 1 Series"(file:///D:/selenium/CarGuideProject/src/test/resources/features/SearchCars.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="SKIP" signature="writeReport()[pri:0, instance:runner.runner_TestNG@370736d9]" name="writeReport" is-config="true" duration-ms="0" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="writeReport()[pri:0, instance:runner.runner_TestNG@63753b6d]" name="writeReport" is-config="true" duration-ms="1" started-at="2021-02-24T20:47:09Z" finished-at="2021-02-24T20:47:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeReport -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.runner_TestNG@370736d9]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2021-01-15T13:35:42Z" finished-at="2021-01-15T13:35:42Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.runner_TestNG@63753b6d]" name="tearDownClass" is-config="true" duration-ms="313" started-at="2021-02-24T20:47:09Z" finished-at="2021-02-24T20:47:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,0 +1,13 @@
+INFO - Execution Starting Time is Wed_Feb_24_17_28_05_CET_2021.jpg
+INFO - logger started
+INFO - Validate number of tabs on home pagedocument created
+INFO - User is at homepage
+INFO - [buy + sell, reviews, news, advice, pricing + specs, guides]
+INFO - Validate search cars feature at home pagedocument created
+INFO - User is at homepage
+INFO - User select the car brand
+INFO - User select the car Model
+INFO - User clicks on show me cars
+INFO - Validate search cars pagedocument created
+INFO - <log end>
+INFO - Log end time is Wed_Feb_24_17_29_05_CET_2021.jpg

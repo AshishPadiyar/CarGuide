@@ -6,9 +6,12 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.sql.Driver;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.util.Units;
 import org.apache.poi.xwpf.usermodel.BreakType;
@@ -16,16 +19,13 @@ import org.apache.poi.xwpf.usermodel.Document;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.WebDriver.Timeouts;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -66,8 +66,7 @@ public static void setUp() throws IOException {
 				driver = new ChromeDriver(options);
 				//log.info("Chrome Browser Launched !!!");
 			}else if(browser.equalsIgnoreCase("firefox")) {
-				
-				
+
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				//log.info("Firefox Browser Launched !!!");
@@ -85,14 +84,17 @@ public static void setUp() throws IOException {
 
 		public static boolean IsElementPresent(By by) {
 			try {
+
 			driver.findElement(by);
 			return true;
 				}
 			catch(Exception e)
 			{
 				//e.printStackTrace();
-				return false;	
+				return false;
+
 			}
+
 		}
 		
 		public static void createWordDoc(String TestCaseName){
@@ -170,6 +172,21 @@ public static void setUp() throws IOException {
 			js.executeScript("arguments[0].scrollIntoView();", element);
 		}
 		
+		
+		public static void DynamicWaitXpath(String locator)
+		{
+			wait=new WebDriverWait(DriverUtils.driver,10);
+			DriverUtils.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+		}
+	public static void DynamicWaitXpathCss(String locator)
+	{
+		wait=new WebDriverWait(DriverUtils.driver,10);
+		DriverUtils.wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator)));
+	}
+
+	public static void ScrollToButtom() {
+		DriverUtils.driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL,Keys.END);
+	}
 
 
 }

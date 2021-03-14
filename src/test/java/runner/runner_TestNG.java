@@ -17,11 +17,11 @@ import utilities.DriverUtils;
 @CucumberOptions(features="src/test/resources/features",
 glue="stepDefinations",
 monochrome = true,
-tags="@HomePageTabs",
+//tags="@HomePageTabs",
 plugin = {
 		"html:target/cucumber-html-report", "json:target/cucumber-reports/cucumber.json",
-		"junit:target/cucumber-reports/cucumber.xml","pretty", "html:target/HtmlReports/index.html",
-		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+		"junit:target/cucumber-reports/cucumber.xml","pretty", "html:target/HtmlReports/index.html"})
+		//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 
 
 

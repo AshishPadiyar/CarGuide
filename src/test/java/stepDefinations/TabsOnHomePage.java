@@ -49,7 +49,10 @@ public class TabsOnHomePage {
 	@Then("Verify tabs on homepage")
 	public void verify_tabs_on_homepage() {
 		ArrayList tabs=carsGuideHomePageActions.HomePageTabs();
-		System.out.println("Each tab name is "+tabs);
+		for(int i=1;i<tabs.size();i++)
+		{
+		System.out.println("Each tab name is "+tabs.get(i));
 		ConfigUtils.log.info(tabs);
+		}
 	}
 }

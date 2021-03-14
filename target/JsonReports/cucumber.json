@@ -3,42 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-01-31T21:44:12.193Z",
-        "before": [
-          {
-            "result": {
-              "duration": 9315000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinations.Hooks.BeforeSteps(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "line": 6,
-        "name": "Validate search cars feature at home page",
+        "line": 4,
+        "name": "Navigate to carguide site",
         "description": "",
-        "id": "test-to-check--car-search-funtionality-in-homepage;validate-search-cars-feature-at-home-page",
-        "after": [
-          {
-            "result": {
-              "duration": 4482000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinations.Hooks.afterSteps(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 345000000,
+              "duration": 533000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 5,
             "name": "I am on the home page \"https://www.carsguide.com.au/\"",
             "match": {
               "arguments": [
@@ -53,10 +29,10 @@
           },
           {
             "result": {
-              "duration": 1359000000,
+              "duration": 1973000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 6,
             "name": "User at home page with title \"Sign up / Sign in\"",
             "match": {
               "arguments": [
@@ -68,84 +44,63 @@
               "location": "stepDefinations.SearchCarsOnHomePage.User_at_home_page_with_title(java.lang.String)"
             },
             "keyword": "When "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-14T14:54:16.875Z",
+        "before": [
           {
             "result": {
-              "duration": 216000000,
+              "duration": 7313000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "select car brand on homepage \"BMW\"",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"BMW\"",
-                  "offset": 29
-                }
-              ],
-              "location": "stepDefinations.SearchCarsOnHomePage.select_car_brand_on_homepage(java.lang.String)"
+              "location": "stepDefinations.Hooks.BeforeSteps(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "To check Footer Links on hompage",
+        "description": "",
+        "id": "test-to-check--car-search-functionality-in-homepage;to-check-footer-links-on-hompage",
+        "after": [
+          {
+            "result": {
+              "duration": 322000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.afterSteps(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 107000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user scrolls to the button of the page",
+            "match": {
+              "location": "stepDefinations.SearchCarsOnHomePage.user_scrolls_to_the_button_of_the_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 191000000,
+              "duration": 872000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "select model on homepage \"1 Series\"",
+            "line": 42,
+            "name": "User fetch the name of all the links",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"1 Series\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepDefinations.SearchCarsOnHomePage.select_model_on_homepage(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2656000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "click on show me cars",
-            "match": {
-              "location": "stepDefinations.SearchCarsOnHomePage.click_on_show_me_cars()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "i should see a list of searched cars using hompage search",
-            "match": {
-              "location": "stepDefinations.SearchCarsOnHomePage.i_should_see_a_list_of_searched_cars_using_hompage_search()"
+              "location": "stepDefinations.SearchCarsOnHomePage.user_fetch_the_name_of_all_the_links()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 636000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the page title should is \"Bmw 1 Series for Sale | carsguide\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Bmw 1 Series for Sale | carsguide\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepDefinations.SearchCarsOnHomePage.the_page_title_should_is(java.lang.String)"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
@@ -155,9 +110,9 @@
         ]
       }
     ],
-    "name": "Test to check  car search funtionality in homepage",
+    "name": "Test to check  car search functionality in homepage",
     "description": "",
-    "id": "test-to-check--car-search-funtionality-in-homepage",
+    "id": "test-to-check--car-search-functionality-in-homepage",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/HomePageSearchCars.feature",
     "tags": []
