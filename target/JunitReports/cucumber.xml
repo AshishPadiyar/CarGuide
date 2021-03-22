@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.731">
-<testcase classname="Test to check  car search functionality in homepage" name="To check Footer Links on hompage" time="11.247">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.598">
+<testcase classname="Test to check  car search functionality in homepage" name="To check Footer Links on hompage" time="17.96">
 <system-out><![CDATA[Given I am on the home page "https://www.carsguide.com.au/".................passed
 When User at home page with title "Sign up / Sign in".......................passed
 And user scrolls to the button of the page..................................passed

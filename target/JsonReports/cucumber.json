@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 533000000,
+              "duration": 756000000,
               "status": "passed"
             },
             "line": 5,
@@ -29,7 +29,7 @@
           },
           {
             "result": {
-              "duration": 1973000000,
+              "duration": 2149000000,
               "status": "passed"
             },
             "line": 6,
@@ -48,11 +48,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-14T14:54:16.875Z",
+        "start_timestamp": "2021-03-22T23:36:08.816Z",
         "before": [
           {
             "result": {
-              "duration": 7313000000,
+              "duration": 13412000000,
               "status": "passed"
             },
             "match": {
@@ -60,14 +60,14 @@
             }
           }
         ],
-        "line": 40,
+        "line": 36,
         "name": "To check Footer Links on hompage",
         "description": "",
         "id": "test-to-check--car-search-functionality-in-homepage;to-check-footer-links-on-hompage",
         "after": [
           {
             "result": {
-              "duration": 322000000,
+              "duration": 289000000,
               "status": "passed"
             },
             "match": {
@@ -80,10 +80,10 @@
         "steps": [
           {
             "result": {
-              "duration": 107000000,
+              "duration": 152000000,
               "status": "passed"
             },
-            "line": 41,
+            "line": 37,
             "name": "user scrolls to the button of the page",
             "match": {
               "location": "stepDefinations.SearchCarsOnHomePage.user_scrolls_to_the_button_of_the_page()"
@@ -92,10 +92,10 @@
           },
           {
             "result": {
-              "duration": 872000000,
+              "duration": 1046000000,
               "status": "passed"
             },
-            "line": 42,
+            "line": 38,
             "name": "User fetch the name of all the links",
             "match": {
               "location": "stepDefinations.SearchCarsOnHomePage.user_fetch_the_name_of_all_the_links()"

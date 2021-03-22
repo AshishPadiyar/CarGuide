@@ -1,7 +1,7 @@
-INFO    2021-03-14 15:54:16,376 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2021-03-14 15:54:16,382 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Sun_Mar_14_15_54_16_CET_2021.jpg
-INFO    2021-03-14 15:54:16,383 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2021-03-14 15:54:17,580 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Footer Links on hompagedocument created
-INFO    2021-03-14 15:54:24,847 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2021-03-14 15:54:28,181 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
-INFO    2021-03-14 15:54:28,181 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Sun_Mar_14_15_54_28_CET_2021.jpg
+INFO    2021-03-23 00:36:08,145 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2021-03-23 00:36:08,158 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Tue_Mar_23_00_36_08_CET_2021.jpg
+INFO    2021-03-23 00:36:08,159 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2021-03-23 00:36:09,625 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Footer Links on hompagedocument created
+INFO    2021-03-23 00:36:23,138 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2021-03-23 00:36:26,847 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
+INFO    2021-03-23 00:36:26,848 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Tue_Mar_23_00_36_26_CET_2021.jpg

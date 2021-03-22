@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e8d933a-2366-4f07-bb4f-4a0c7c198feb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/objectrepository/ObjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectrepository/ObjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageactions/CarsGuideHomePageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageactions/CarsGuideHomePageActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageactions/SearchCarsPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageactions/SearchCarsPageActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pagelocators/CarsGuideHomePageLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pagelocators/CarsGuideHomePageLocators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pagelocators/SearchCarsPageLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pagelocators/SearchCarsPageLocators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/DriverUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/DriverUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ExcelUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/HomePageSearchCars.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/HomePageSearchCars.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logs/app_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/logs/app_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/TestRunnerClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/TestRunnerClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/runner_TestNG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/runner_TestNG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinations/Hooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsOnHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsOnHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/TabsOnHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinations/TabsOnHomePage.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1ow1theLrPacjlsVPos5QPHdENf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SmartBearProject" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="objectrepository" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestRunnerClass" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="CarGuideProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunnerClass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e8d933a-2366-4f07-bb4f-4a0c7c198feb" name="Default Changelist" comment="" />
+      <created>1614183061563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614183061563</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
