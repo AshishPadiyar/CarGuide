@@ -7,9 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Driver;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -186,6 +184,29 @@ public static void setUp() throws IOException {
 
 	public static void ScrollToButtom() {
 		DriverUtils.driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL,Keys.END);
+	}
+
+	public static String SwitchToWindow()
+	{
+		Set<String> windows=DriverUtils.driver.getWindowHandles();
+		String homePage= DriverUtils.driver.getWindowHandle();
+		Iterator<String> itr=windows.iterator();
+		while(itr.hasNext()) {
+
+			String child_window=itr.next();
+
+
+			if(!homePage.equals(child_window))
+			{
+				driver.switchTo().window(child_window);
+
+				System.out.println(driver.switchTo().window(child_window).getTitle());
+
+
+			}
+		}
+		return homePage;
+
 	}
 
 

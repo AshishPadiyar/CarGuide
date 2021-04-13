@@ -1,5 +1,6 @@
 package pageactions;
 
+import java.sql.Driver;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -110,6 +111,25 @@ public class CarsGuideHomePageActions {
 			}
 		}
 	}
+	public void ScrollToPopularArticle()
+	{
+		DriverUtils.ScrollToElement(carsGuideHomePageLocators.popularArticle);
+	}
+
+	public void clickArticleLink()
+	{
+		List<WebElement> varArticle=carsGuideHomePageLocators.listpopularArticle;
+		for(int i=1;i<=varArticle.size();i++)
+		{
+			DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'popular-articles hidden')]/following-sibling::div/child::div/div["+i+"]/a[3]")).click();
+			String parentwin= DriverUtils.SwitchToWindow();
+			String text=carsGuideHomePageLocators.eleArticleText.getText();
+			System.out.println("Text of page is "+ text);
+			DriverUtils.driver.close();
+			DriverUtils.driver.switchTo().window(parentwin);
+		}
+	}
+	//*[contains(@class,'popular-articles hidden')]/following-sibling::div/child::div/div[2]/a[3]
 	
 	
 

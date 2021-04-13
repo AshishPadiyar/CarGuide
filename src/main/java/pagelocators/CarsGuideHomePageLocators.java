@@ -69,5 +69,15 @@ public class CarsGuideHomePageLocators {
 	@FindBy(css =".uhf-footer-nav>ul>li")
 	public List<WebElement> eleFooters;
 
+	@FindBy(xpath = "//*[contains(@class,'popular-articles hidden')]/following-sibling::div/child::div/div/parent::div/parent::div/preceding-sibling::div/child::div/following-sibling::a")
+	public WebElement popularArticle;
+
+	@FindBy(xpath = "//*[contains(@class,'popular-articles hidden')]/following-sibling::div/child::div/div")
+	public List<WebElement> listpopularArticle;
+
+	@FindBy(css =".bg-container>div>div>h1")
+	public WebElement eleArticleText;
+
+
 
 }

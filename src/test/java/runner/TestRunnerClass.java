@@ -22,7 +22,7 @@ import utilities.*;
 @CucumberOptions(features="src/test/resources/features",
 monochrome = true,
 glue="stepDefinations",stepNotifications = true,
-tags="@HomePage",
+tags="@PopularArticle",
 plugin = { 
 "pretty", "html:target/HtmlReports/index.html",
 "json:target/JsonReports/cucumber.json",
