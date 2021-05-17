@@ -78,6 +78,14 @@ public class CarsGuideHomePageLocators {
 	@FindBy(css =".bg-container>div>div>h1")
 	public WebElement eleArticleText;
 
+	@FindBy(css = "input[name='make']")
+	public WebElement eleMake;
+
+	@FindBy(xpath ="//*[@id='uhf-make-search']/child::ul/child::li")
+	public List<WebElement> eleMakeList;
+
+	@FindBy(xpath ="//*[@class='uhf-model-results uhf-opaque']/child::ul/child::li")
+	public List<WebElement> eleModelList;
 
 
 }

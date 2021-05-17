@@ -1,7 +1,9 @@
-INFO    2021-04-14 00:03:27,494 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2021-04-14 00:03:27,506 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Wed_Apr_14_00_03_27_CEST_2021.jpg
-INFO    2021-04-14 00:03:27,506 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2021-04-14 00:03:29,354 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Most popular Articles on the homepagedocument created
-INFO    2021-04-14 00:03:40,039 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2021-04-14 00:03:51,157 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
-INFO    2021-04-14 00:03:51,158 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Wed_Apr_14_00_03_51_CEST_2021.jpg
+INFO    2021-05-17 02:47:06,947 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2021-05-17 02:47:06,963 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Mon_May_17_02_47_06_CEST_2021.jpg
+INFO    2021-05-17 02:47:06,963 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2021-05-17 02:47:08,778 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Most popular Articles on the homepagedocument created
+INFO    2021-05-17 02:47:18,562 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2021-05-17 02:47:41,203 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Most popular Articles on the homepagedocument created
+INFO    2021-05-17 02:47:49,499 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2021-05-17 02:48:10,570 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
+INFO    2021-05-17 02:48:10,571 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Mon_May_17_02_48_10_CEST_2021.jpg

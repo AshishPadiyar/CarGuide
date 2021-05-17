@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.598">
-<testcase classname="Test to check  car search functionality in homepage" name="To check Footer Links on hompage" time="17.96">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="63.469">
+<testcase classname="Test to check the number of tabs in homepage" name="To check Most popular Articles on the homepage" time="33.423">
 <system-out><![CDATA[Given I am on the home page "https://www.carsguide.com.au/".................passed
 When User at home page with title "Sign up / Sign in".......................passed
-And user scrolls to the button of the page..................................passed
-Then User fetch the name of all the links...................................passed
+And user clicks on Make.....................................................passed
+Then User selects car and display all the model.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test to check the number of tabs in homepage" name="To check Most popular Articles on the homepage 2" time="29.292">
+<system-out><![CDATA[Given I am on the home page "https://www.carsguide.com.au/".................passed
+When User at home page with title "Sign up / Sign in".......................passed
+And user clicks on Make.....................................................passed
+Then User selects car and display all the model in a map....................passed
 ]]></system-out>
 </testcase>
 </testsuite>

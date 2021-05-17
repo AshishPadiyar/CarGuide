@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
+        "line": 6,
         "name": "Navigate to carguide site",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 756000000,
+              "duration": 781000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 7,
             "name": "I am on the home page \"https://www.carsguide.com.au/\"",
             "match": {
               "arguments": [
@@ -29,10 +29,10 @@
           },
           {
             "result": {
-              "duration": 2149000000,
+              "duration": 2580000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "User at home page with title \"Sign up / Sign in\"",
             "match": {
               "arguments": [
@@ -48,11 +48,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-22T23:36:08.816Z",
+        "start_timestamp": "2021-05-17T00:47:07.728Z",
         "before": [
           {
             "result": {
-              "duration": 13412000000,
+              "duration": 9854000000,
               "status": "passed"
             },
             "match": {
@@ -60,14 +60,14 @@
             }
           }
         ],
-        "line": 36,
-        "name": "To check Footer Links on hompage",
+        "line": 12,
+        "name": "To check Most popular Articles on the homepage",
         "description": "",
-        "id": "test-to-check--car-search-functionality-in-homepage;to-check-footer-links-on-hompage",
+        "id": "test-to-check-the-number-of-tabs-in-homepage;to-check-most-popular-articles-on-the-homepage",
         "after": [
           {
             "result": {
-              "duration": 289000000,
+              "duration": 244000000,
               "status": "passed"
             },
             "match": {
@@ -80,41 +80,148 @@
         "steps": [
           {
             "result": {
-              "duration": 152000000,
+              "duration": 1109000000,
               "status": "passed"
             },
-            "line": 37,
-            "name": "user scrolls to the button of the page",
+            "line": 13,
+            "name": "user clicks on Make",
             "match": {
-              "location": "stepDefinations.SearchCarsOnHomePage.user_scrolls_to_the_button_of_the_page()"
+              "location": "stepDefinations.MakeAndModel.userClicksOnMake()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1046000000,
+              "duration": 18652000000,
               "status": "passed"
             },
-            "line": 38,
-            "name": "User fetch the name of all the links",
+            "line": 14,
+            "name": "User selects car and display all the model",
             "match": {
-              "location": "stepDefinations.SearchCarsOnHomePage.user_fetch_the_name_of_all_the_links()"
+              "location": "stepDefinations.MakeAndModel.userSelectsCarAndDisplayAllTheModel()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@HomePage"
+            "name": "@MakeAndModel"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Navigate to carguide site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 84000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the home page \"https://www.carsguide.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.carsguide.com.au/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinations.SearchCarsOnHomePage.i_am_on_the_home_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1657000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User at home page with title \"Sign up / Sign in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign up / Sign in\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinations.SearchCarsOnHomePage.User_at_home_page_with_title(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-17T00:47:41.177Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8228000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.BeforeSteps(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "To check Most popular Articles on the homepage",
+        "description": "",
+        "id": "test-to-check-the-number-of-tabs-in-homepage;to-check-most-popular-articles-on-the-homepage",
+        "after": [
+          {
+            "result": {
+              "duration": 257000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.Hooks.afterSteps(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1150000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks on Make",
+            "match": {
+              "location": "stepDefinations.MakeAndModel.userClicksOnMake()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17907000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User selects car and display all the model in a map",
+            "match": {
+              "location": "stepDefinations.MakeAndModel.userSelectsCarAndDisplayAllTheModelInAMap()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MakeAndModel"
           }
         ]
       }
     ],
-    "name": "Test to check  car search functionality in homepage",
+    "name": "Test to check the number of tabs in homepage",
     "description": "",
-    "id": "test-to-check--car-search-functionality-in-homepage",
+    "id": "test-to-check-the-number-of-tabs-in-homepage",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/HomePageSearchCars.feature",
+    "uri": "file:src/test/resources/features/MakeAndModel.feature",
     "tags": []
   }
 ]
