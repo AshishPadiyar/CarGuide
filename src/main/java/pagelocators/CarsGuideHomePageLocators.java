@@ -72,11 +72,25 @@ public class CarsGuideHomePageLocators {
 	@FindBy(xpath = "//*[contains(@class,'popular-articles hidden')]/following-sibling::div/child::div/div/parent::div/parent::div/preceding-sibling::div/child::div/following-sibling::a")
 	public WebElement popularArticle;
 
+	@FindBy(xpath = "//*[contains(@class,'col-sm-12 group-main-3')]/child::div/following-sibling::div/h2")
+	public WebElement buyingGuides;
+
+
+	@FindBy(xpath = "//*[contains(@class,'home-shared-block')]/div/a")
+	public List<WebElement> buyingGuidesItem;
+
+	@FindBy(css =".title-container>h1")
+	public WebElement eleBuyingGuidePageText;
+
+	@FindBy(xpath = "//*[contains(@class,'topmodels-rows')]/div[contains(@id,'expert')]")
+	public List<WebElement> bestCarAsPerExperts;
+
 	@FindBy(xpath = "//*[contains(@class,'popular-articles hidden')]/following-sibling::div/child::div/div")
 	public List<WebElement> listpopularArticle;
 
 	@FindBy(css =".bg-container>div>div>h1")
 	public WebElement eleArticleText;
+
 
 	@FindBy(css = "input[name='make']")
 	public WebElement eleMake;

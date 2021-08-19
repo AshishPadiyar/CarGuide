@@ -18,7 +18,7 @@ import utilities.DriverUtils;
 
 
 /*So in order to access variables, methods of locator class,we need to create obj of that locator class
- * now using that obj refrence and dot operator we can access variables, methods of locator class
+ * now using that obj reference and dot operator we can access variables, methods of locator class
  *
  *
  */
@@ -28,11 +28,11 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 	CarsGuideHomePageLocators carsGuideHomePageLocators = null;//creating a instance class variable
 
 	public CarsGuideHomePageActions() {
-		//this.carsGuideHomePageLocators reference var will assign value to carsGuideHomePageLocators
+		//this.carsGuideHomePageLocators reference var will assign value to carsGuideHomePageLocators instance class var
 
 		this.carsGuideHomePageLocators = new CarsGuideHomePageLocators();
 		PageFactory.initElements(DriverUtils.driver, carsGuideHomePageLocators);
-		//we need to initialise all page factory element, we cannot use this here because we want to initialise ele for locator class
+		//we need to initialize all page factory element, we cannot use This here because we want to initialize element for locator class
 
 
 	}
@@ -113,6 +113,34 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 		DriverUtils.ScrollToElement(carsGuideHomePageLocators.popularArticle);
 	}
 
+	public void ScrollToBuyingGuides() {
+		DriverUtils.ScrollToElement(carsGuideHomePageLocators.buyingGuides);
+	}
+
+
+	public void ClickEachBuyingGuide() {
+		List<WebElement> varGuide = carsGuideHomePageLocators.buyingGuidesItem;
+		for (int i = 1; i <= varGuide.size(); i++) {
+			DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'home-shared-block')]/div/a["+i+"]")).click();
+			//String parentwin = DriverUtils.SwitchToWindow();
+			String text = carsGuideHomePageLocators.eleBuyingGuidePageText.getText();
+			System.out.println("New Buying Guide page opened is :  " + text);
+
+			List<WebElement> varBestCarAsPerExperts =carsGuideHomePageLocators.bestCarAsPerExperts;
+			for (int j = 1; j <= varBestCarAsPerExperts.size(); j++) {
+				String carText = 	DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'topmodels-rows')]/div[contains(@id,'expert')]["+j+"]//div/h3/a")).getText();
+				System.out.println(j+ " Car suggest is : "+carText );
+			}
+			DriverUtils.driver.navigate().back();
+			//DriverUtils.MoveBackToPage();
+			//DriverUtils.driver.switchTo().window(parentwin);
+		}
+
+	}
+
+
+
+
 	public void clickArticleLink() {
 		List<WebElement> varArticle = carsGuideHomePageLocators.listpopularArticle;
 		for (int i = 1; i <= varArticle.size(); i++) {
@@ -127,15 +155,16 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 
 	public void ClickOnMake() {
 		carsGuideHomePageLocators.eleMake.click();
-		DriverUtils.writeWordDocument("User clicks on Make", true);
+		DriverUtils.writeWordDocument("User clicks on car Make", true);
 
 	}
 
 	public void ClickOnModel() {
 		List<WebElement> makeList = carsGuideHomePageLocators.eleMakeList;
+		WebElement eleMakeList=null;
 		for (int i = 1; i <= 5; i++) {
-			WebElement eleMakeList = DriverUtils.driver.findElement(By.xpath("//*[@id='uhf-make-search']/child::ul/child::li[" + i + "]/a"));
-			System.out.println("Name of car Make is : " + eleMakeList.getText());
+			 eleMakeList = DriverUtils.driver.findElement(By.xpath("//*[@id='uhf-make-search']/child::ul/child::li[" + i + "]/a"));
+			System.out.println("Car Make : " + eleMakeList.getText());
 			eleMakeList.click();
 
 			DriverUtils.DynamicWaitXpath(eleHomePageTopPanel);
@@ -143,7 +172,7 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 			List<WebElement> modelList = carsGuideHomePageLocators.eleModelList;
 			for (int j = 1; j <= modelList.size(); j++) {
 				WebElement eleModelList = DriverUtils.driver.findElement(By.xpath("//*[@class='uhf-model-results uhf-opaque']/child::ul/child::li[" + j + "]/a"));
-				System.out.println("Name of car Model is : " + eleModelList.getText());
+				System.out.println("Car Model under "+ eleMakeList.getText()+ " : " + eleModelList.getText());
 			}
 			carsGuideHomePageLocators.eleMake.clear();
 			DriverUtils.driver.findElement(By.xpath("//*[@class='uhf-lower-fixed on']")).click();
@@ -179,8 +208,8 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 			for (Map.Entry<String, List<String>> entry : hMap.entrySet()) {
 				String key = entry.getKey();
 				List<String> values = entry.getValue();
-				System.out.println("Key = " + key);
-				System.out.println("Values = " + values + "n");
+				System.out.print("Car Make is = " + key + "\t and under it are ");
+				System.out.println("Car Model are = " + values);
 			}
 			hMap.clear();
 			listModel.clear();

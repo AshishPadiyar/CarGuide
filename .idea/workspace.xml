@@ -5,32 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e8d933a-2366-4f07-bb4f-4a0c7c198feb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinations/BuyingGuides.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/BuyingGuides.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogFolder/logfileTue_Mar_23_00_36_08_CET_2021.jpg.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot/Tue_Mar_23_00_36_23_CET_2021.jpg/screenshot6816219350866211393.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objectrepository/ObjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objectrepository/ObjectRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pagelocators/CarsGuideHomePageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagelocators/CarsGuideHomePageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunnerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/HtmlReports/index.html/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JsonReports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/JsonReports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JunitReports/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/JunitReports/cucumber.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageactions/CarsGuideHomePageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageactions/CarsGuideHomePageActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageactions/SearchCarsPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageactions/SearchCarsPageActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pagelocators/CarsGuideHomePageLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pagelocators/CarsGuideHomePageLocators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pagelocators/SearchCarsPageLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pagelocators/SearchCarsPageLocators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/DriverUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/DriverUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ExcelUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logs/app_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/logs/app_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/TestRunnerClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/TestRunnerClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/runner_TestNG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/runner_TestNG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinations/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsOnHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsOnHomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsStepDef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/TabsOnHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinations/TabsOnHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/OR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/OR.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/formatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JsonReports/cucumber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JunitReports/cucumber.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageactions/CarsGuideHomePageActions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageactions/SearchCarsPageActions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pagelocators/CarsGuideHomePageLocators.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pagelocators/SearchCarsPageLocators.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/DriverUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ExcelUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/excel/testdata.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/extent-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/extent.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GettheTabsInHomePage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/HomePageSearchCars.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/SearchCars.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logs/app_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/properties/Config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/properties/OR.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/properties/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/TestRunnerClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/runner_TestNG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/Hooks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsOnHomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsStepDef.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/TabsOnHomePage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

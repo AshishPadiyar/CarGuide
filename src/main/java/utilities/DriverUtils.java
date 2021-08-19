@@ -169,6 +169,12 @@ public static void setUp() throws IOException {
 			js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].scrollIntoView();", element);
 		}
+
+	public static void MoveBackToPage() {
+		js = (JavascriptExecutor) driver;
+		js.executeScript("window.history.go(-1)");
+	}
+
 		
 		
 		public static void DynamicWaitXpath(String locator)
