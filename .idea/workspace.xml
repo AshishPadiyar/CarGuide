@@ -5,46 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e8d933a-2366-4f07-bb4f-4a0c7c198feb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinations/BuyingGuides.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/BuyingGuides.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagelocators/CarsGuideHomePageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagelocators/CarsGuideHomePageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogFolder/logfileThu_Sep_02_15_37_01_CEST_2021.jpg.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogFolder/logfileThu_Sep_02_15_38_28_CEST_2021.jpg.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Thu_Sep_02_15_37_10_CEST_2021.jpg/screenshot9125303239492438111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Thu_Sep_02_15_37_17_CEST_2021.jpg/screenshot8612813131184900211.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Thu_Sep_02_15_38_39_CEST_2021.jpg/screenshot1776599937895528876.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Thu_Sep_02_15_38_41_CEST_2021.jpg/screenshot6639359668009019846.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Thu_Sep_02_15_38_44_CEST_2021.jpg/screenshot4915165736962589226.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TestingGithub.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TestingGithub.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/OR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/OR.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/formatter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HtmlReports/index.html/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JsonReports/cucumber.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JunitReports/cucumber.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageactions/CarsGuideHomePageActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageactions/SearchCarsPageActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pagelocators/CarsGuideHomePageLocators.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pagelocators/SearchCarsPageLocators.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ConfigUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/DriverUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ExcelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/excel/testdata.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GettheTabsInHomePage.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/HomePageSearchCars.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/SearchCars.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logs/app_log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/properties/Config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/properties/OR.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/properties/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/TestRunnerClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/runner_TestNG.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/Hooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsOnHomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/SearchCarsStepDef.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinations/TabsOnHomePage.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -83,6 +53,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SeleniumForkedProject\CarGuide\src\test\resources\features" />
       <recent name="D:\selenium\CarGuideProject\src\test\resources\features" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">

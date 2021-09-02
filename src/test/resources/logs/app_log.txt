@@ -1,9 +1,3 @@
-INFO    2021-08-18 19:47:20,232 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2021-08-18 19:47:20,232 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Wed_Aug_18_19_47_20_CEST_2021.jpg
-INFO    2021-08-18 19:47:20,232 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2021-08-18 19:47:21,220 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Most popular Articles on the homepagedocument created
-INFO    2021-08-18 19:47:26,712 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2021-08-18 19:47:40,766 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Most popular Articles on the homepagedocument created
-INFO    2021-08-18 19:47:44,960 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2021-08-18 19:48:08,645 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
-INFO    2021-08-18 19:48:08,660 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Wed_Aug_18_19_48_08_CEST_2021.jpg
+INFO    2021-09-03 00:39:57,204 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2021-09-03 00:39:57,212 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Fri_Sep_03_00_39_57_CEST_2021.jpg
+INFO    2021-09-03 00:39:57,212 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
