@@ -1,6 +1,7 @@
 
 Feature: Test git hub branching process
   We will learn how to create,merge,delete branches to master
+  checking on pull request template
 
   # here you will write your user story
   
