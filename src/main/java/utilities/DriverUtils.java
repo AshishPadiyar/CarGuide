@@ -98,6 +98,7 @@ public static void setUp() throws IOException {
 		public static void createWordDoc(String TestCaseName){
 			try {
 			File word=new File("TestEvidences");
+			word.mkdir();
 			wordFilePath=word+"\\"+TestCaseName+".docx";
 			File file =new File(wordFilePath);
 			if(file.exists()) {
@@ -128,7 +129,8 @@ public static void setUp() throws IOException {
 				run.addCarriageReturn();
 				if(screenShot) {
 					InputStream pic= new FileInputStream(Screenshot());
-					run.addPicture(pic, Document.PICTURE_TYPE_JPEG, "", Units.toEMU(440), Units.toEMU(440));
+					//run.addPicture(pic, Document.PICTURE_TYPE_JPEG, "", Units.toEMU(440), Units.toEMU(440));
+					run.addPicture(pic, document.PICTURE_TYPE_JPEG, "", Units.toEMU(440), Units.toEMU(440));
 					run.addBreak();
 					run.addBreak();
 					run.addBreak(BreakType.PAGE);
@@ -157,7 +159,7 @@ public static void setUp() throws IOException {
 			String newdate= dateTime();
 			File screenshot= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			try {
-				FileUtils.copyFileToDirectory(screenshot, new File(System.getProperty("user.dir")+"\\screenshot\\"+newdate));
+				FileUtils.copyFileToDirectory(screenshot, new File(System.getProperty("user.dir")+"\\Screenshots\\"+newdate));
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
