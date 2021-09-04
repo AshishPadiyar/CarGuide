@@ -10,7 +10,7 @@ Feature: Test git hub branching process
     When User at home page with title "Sign up / Sign in"
     
     
-	@BuyingGuide
+
   Scenario: To check different buying guides on the homepage
     And  user scrolls the window till Buying Guides
     Then user selects each buying guide article one by one
