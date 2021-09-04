@@ -1,5 +1,5 @@
 
-Feature: Test to check the number of tabs in homepage
+Feature: Test to check the number of Cars under certain Model in homepage
 
   # here you will write your user story
   
@@ -9,11 +9,11 @@ Feature: Test to check the number of tabs in homepage
     
     
 	@MakeAndModel
-  Scenario: To check Most popular Articles on the homepage
+  Scenario: To check numbers of Cars under particular model on the homepage
     And  user clicks on Make
     Then User selects car and display all the model
 
   @MakeAndModel
-  Scenario: To check Most popular Articles on the homepage
+  Scenario: To check numbers of Cars under particular model on the homepage
     And  user clicks on Make
     Then User selects car and display all the model in a map
