@@ -115,6 +115,8 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 
 	public void ScrollToBuyingGuides() {
 		DriverUtils.ScrollToElement(carsGuideHomePageLocators.buyingGuides);
+		DriverUtils.writeWordDocument("User scroll to Buy Guides section", true);
+		ConfigUtils.log.info("User scroll to Buy Guides section");
 	}
 
 
@@ -125,11 +127,15 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 			//String parentwin = DriverUtils.SwitchToWindow();
 			String text = carsGuideHomePageLocators.eleBuyingGuidePageText.getText();
 			System.out.println("New Buying Guide page opened is :  " + text);
+			DriverUtils.writeWordDocument("New Buying Guide page opened is : " + text, true);
+			ConfigUtils.log.info("New Buying Guide page opened is : " + text);
 
 			List<WebElement> varBestCarAsPerExperts =carsGuideHomePageLocators.bestCarAsPerExperts;
 			for (int j = 1; j <= varBestCarAsPerExperts.size(); j++) {
 				String carText = 	DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'topmodels-rows')]/div[contains(@id,'expert')]["+j+"]//div/h3/a")).getText();
 				System.out.println(j+ " Car suggest is : "+carText );
+				ConfigUtils.log.info(j+ " Car suggest is : "+carText );
+
 			}
 			DriverUtils.driver.navigate().back();
 			//DriverUtils.MoveBackToPage();

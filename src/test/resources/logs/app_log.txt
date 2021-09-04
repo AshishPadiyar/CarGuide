@@ -1,3 +1,31 @@
-INFO    2021-09-03 00:39:57,204 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2021-09-03 00:39:57,212 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Fri_Sep_03_00_39_57_CEST_2021.jpg
-INFO    2021-09-03 00:39:57,212 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2021-09-04 22:19:22,102 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2021-09-04 22:19:22,108 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Sat_Sep_04_22_19_22_CEST_2021.jpg
+INFO    2021-09-04 22:19:22,108 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2021-09-04 22:19:23,162 [main] org.checkerframework.common.reflection.qual.GetClass  - To check different buying guides on the homepagedocument created
+INFO    2021-09-04 22:19:29,860 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2021-09-04 22:19:31,983 [main] org.checkerframework.common.reflection.qual.GetClass  - User scroll to Buy Guides section
+INFO    2021-09-04 22:19:34,251 [main] org.checkerframework.common.reflection.qual.GetClass  - New Buying Guide page opened is : SUVs under $30k
+INFO    2021-09-04 22:19:34,330 [main] org.checkerframework.common.reflection.qual.GetClass  - 1 Car suggest is : Skoda Kamiq
+INFO    2021-09-04 22:19:34,410 [main] org.checkerframework.common.reflection.qual.GetClass  - 2 Car suggest is : Volkswagen T-Cross
+INFO    2021-09-04 22:19:34,489 [main] org.checkerframework.common.reflection.qual.GetClass  - 3 Car suggest is : Kia Seltos
+INFO    2021-09-04 22:19:34,556 [main] org.checkerframework.common.reflection.qual.GetClass  - 4 Car suggest is : Kia Stonic
+INFO    2021-09-04 22:19:34,619 [main] org.checkerframework.common.reflection.qual.GetClass  - 5 Car suggest is : Hyundai Kona
+INFO    2021-09-04 22:19:41,175 [main] org.checkerframework.common.reflection.qual.GetClass  - New Buying Guide page opened is : 7-seater SUVs
+INFO    2021-09-04 22:19:41,229 [main] org.checkerframework.common.reflection.qual.GetClass  - 1 Car suggest is : Audi Q7
+INFO    2021-09-04 22:19:41,282 [main] org.checkerframework.common.reflection.qual.GetClass  - 2 Car suggest is : Volvo XC90
+INFO    2021-09-04 22:19:41,337 [main] org.checkerframework.common.reflection.qual.GetClass  - 3 Car suggest is : Hyundai Palisade
+INFO    2021-09-04 22:19:41,391 [main] org.checkerframework.common.reflection.qual.GetClass  - 4 Car suggest is : Mazda CX-9
+INFO    2021-09-04 22:19:41,432 [main] org.checkerframework.common.reflection.qual.GetClass  - 5 Car suggest is : Ford Everest
+INFO    2021-09-04 22:19:50,843 [main] org.checkerframework.common.reflection.qual.GetClass  - New Buying Guide page opened is : Dual cab Utes
+INFO    2021-09-04 22:19:50,900 [main] org.checkerframework.common.reflection.qual.GetClass  - 1 Car suggest is : Ford Ranger
+INFO    2021-09-04 22:19:51,106 [main] org.checkerframework.common.reflection.qual.GetClass  - 2 Car suggest is : Isuzu D-Max
+INFO    2021-09-04 22:19:51,307 [main] org.checkerframework.common.reflection.qual.GetClass  - 3 Car suggest is : Mazda BT-50
+INFO    2021-09-04 22:19:51,420 [main] org.checkerframework.common.reflection.qual.GetClass  - 4 Car suggest is : Mitsubishi Triton
+INFO    2021-09-04 22:19:51,507 [main] org.checkerframework.common.reflection.qual.GetClass  - 5 Car suggest is : Toyota HiLux
+INFO    2021-09-04 22:19:59,398 [main] org.checkerframework.common.reflection.qual.GetClass  - New Buying Guide page opened is : SUVs under $50k
+INFO    2021-09-04 22:19:59,451 [main] org.checkerframework.common.reflection.qual.GetClass  - 1 Car suggest is : Toyota RAV4
+INFO    2021-09-04 22:19:59,495 [main] org.checkerframework.common.reflection.qual.GetClass  - 2 Car suggest is : Kia Sorento
+INFO    2021-09-04 22:19:59,543 [main] org.checkerframework.common.reflection.qual.GetClass  - 3 Car suggest is : Hyundai Santa Fe
+INFO    2021-09-04 22:19:59,590 [main] org.checkerframework.common.reflection.qual.GetClass  - 4 Car suggest is : Mazda CX-9
+INFO    2021-09-04 22:19:59,643 [main] org.checkerframework.common.reflection.qual.GetClass  - 5 Car suggest is : Volkswagen Tiguan
+INFO    2021-09-04 22:20:03,678 [main] org.checkerframework.common.reflection.qual.GetClass  - To check different buying guides on the homepagedocument created
