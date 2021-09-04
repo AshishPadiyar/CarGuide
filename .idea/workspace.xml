@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9e8d933a-2366-4f07-bb4f-4a0c7c198feb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TestingGithub.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TestingGithub.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogFolder/logfileSat_Sep_04_22_19_22_CEST_2021.jpg.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestEvidences/To check Most popular Articles on the homepage.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestEvidences/To check different buying guides on the homepage.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Sat_Sep_04_22_19_29_CEST_2021.jpg/screenshot1968202506995323514.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Sat_Sep_04_22_19_31_CEST_2021.jpg/screenshot6021510387541756325.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Sat_Sep_04_22_19_33_CEST_2021.jpg/screenshot5832575938984676742.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Sat_Sep_04_22_19_40_CEST_2021.jpg/screenshot1608403062490379660.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Sat_Sep_04_22_19_50_CEST_2021.jpg/screenshot6821437554154038592.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot/Sat_Sep_04_22_19_59_CEST_2021.jpg/screenshot760287983316633881.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +102,17 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
