@@ -1,4 +1,4 @@
-package stepDefinations;
+package stepDefinitions;
 
 import java.util.HashMap;
 import java.util.List;
@@ -31,15 +31,17 @@ public class SearchCarsStepDef {
 
 	
 	
-//############ Step definations	#########################
+//############ Step definitions	#########################
 
-	@Given("I am on the home page of {string}")
-	public void i_am_on_the_home_page_of(String strwebsiteURL) {
-		
-		 System.out.println("test data"+datamap);
+	@Given("user is on home page of {} with title {}")
+	public void checkTitleOfHomePage(String strWebsiteURL,String expected) {
+
+		String actual = carsGuideHomePageActions.SignIntitle();
+		Assert.assertEquals(actual, expected);
 	}
 
-	@When("i move to the menu")
+
+	@When("user hover to the menu")
 	public void i_move_to_the_menu(List<String> data) {
 
 		String topMenu=data.get(1);
@@ -48,56 +50,56 @@ public class SearchCarsStepDef {
 		
 	}
 
-	@And("click on {string} link")
-	public void click_on_link(String strsearchcarslink) {
+	@And("click on Search Cars link")
+	public void click_on_link() {
 		
-		carsGuideHomePageActions.clickonSearchCars();
+		carsGuideHomePageActions.clickOnSearchCars();
 	}
 
-	@And("select car brand as {string}")
+	@And("select car brand as {}")
 	public void select_car_brand_as(String strCarBrand) {
 		
 		searchCarsPageActions.selectCarBrand(strCarBrand);
 		
 	}
 
-	@And("select model as {string}")
+	@And("select model as {}")
 	public void select_model_as(String strModel) {
 		
 		
 		searchCarsPageActions.selectCarModel(strModel);
 	}
 
-	@And("select location as {string}")
+	@And("select location as {}")
 	public void select_location_as(String strLoc) {
 		
 		searchCarsPageActions.selectLocation(strLoc);
 	}
 
-	@And("select price max as {string}")
+	@And("select price max as {}")
 	public void select_price_max_as(String strPrice) {
 		
 		searchCarsPageActions.selectPrice(strPrice);
 
 	}
 
-	@And("Click on Find_My_Next_Car button")
+	@And("click on Find_My_Next_Car button")
 	public void click_on_Find_My_Next_Car_button() {
 		
 		searchCarsPageActions.clickonFind_My_Next_Car();
 
 	}
 
-	@Then("i should see a list of searched cars")
+	@Then("user should see a list of searched cars")
 	public void i_should_see_a_list_of_searched_cars() {
 		
 		System.out.println("Car list found");
 	}
 
-	@And("the page title should be {string}")
+	@And("the page title should be {}")
 	public void the_page_title_should_be(String expected) {
 		
 		String actual=DriverUtils.driver.getTitle();
-		Assert.assertEquals(actual, expected);
+		Assert.assertTrue(actual.contains(expected),"following Car title not found on the page " +expected);
 	}
 }

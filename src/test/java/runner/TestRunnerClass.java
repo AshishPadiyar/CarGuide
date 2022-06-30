@@ -21,12 +21,11 @@ import utilities.*;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features",
 monochrome = true,
-glue="stepDefinations",stepNotifications = true,
-tags="@BuyingGuide",
+glue="stepDefinitions",stepNotifications = true,
 plugin = { 
-"pretty", "html:target/HtmlReports/index.html",
-"json:target/JsonReports/cucumber.json",
-"junit:target/JunitReports/cucumber.xml"
+"pretty", "json:target/cucumber-reports/cucumber.json"
+//		"html:target/cucumber-reports/cucumber.html",
+//"junit:target/JunitReports/cucumber.xml"
 }
 
 
@@ -43,7 +42,7 @@ public class TestRunnerClass {
 	}
 	
 	@AfterClass
-	public static void writeReport() throws IOException 
+	public static void writeReport()
 	{
 		ConfigUtils.log.info("<log end>");
 		ConfigUtils.log.info("Log end time is "+DriverUtils.dateTime());

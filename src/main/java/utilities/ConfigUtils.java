@@ -28,89 +28,72 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-
-
 public class ConfigUtils {
-	
-	
-	public static WebDriver driver;
-	public static String Browser;
-	public static String url;
-	public static Logger log = Logger.getLogger(GetClass.class);
-	public static Properties Config = new Properties();
-	public static Properties OR = new Properties();
-	public static FileInputStream fis;
-	//public static ExcelReader excel = new ExcelReader(".\\src\\test\\resources\\excel\\testdata.xlsx");
-	public static WebDriverWait wait;
-	public static String logFilePath;
-	static WebElement dropdown;
-	public static String logStartTime="";
-	public static String logfile;
-	
-	
-	public static void beforeTest() throws IOException {
-		
-		ConfigUtils.readConfig();
-		ConfigUtils.loggerStart();
-		
-	}
 
-	
-	
-	
-	public static  void readConfig() throws IOException {
-		
-		
-		PropertyConfigurator.configure(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\log4j.properties");
-			try {
-				fis = new FileInputStream(".\\src\\test\\resources\\properties\\Config.properties");
-				Config.load(fis);
-				log.info("config properties loaded");
-				
-				ConfigUtils.Browser=Config.getProperty("browser");
-				ConfigUtils.url=Config.getProperty("testsiteurl");
-				logFilePath=new File("LogFolder").getAbsolutePath();
-				
-				
-				
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-		}
-	
-	public static void loggerStart() {
-		try {
-			logStartTime=DriverUtils.dateTime();
-			logfile=ConfigUtils.logFilePath+"\\"+"logfile"+logStartTime+".log";
-			BasicConfigurator.configure();
-			FileAppender fp=new FileAppender();
-			fp.setFile(logfile);
-			fp.setLayout(new SimpleLayout());
-			log.addAppender(fp);
-			fp.activateOptions();
-			log.setLevel(Level.INFO);
-			log.info("Execution Starting Time is "+logStartTime);
-			log.info("logger started");
-		}catch(Exception e) {
-			e.printStackTrace();
-			log.error(e);
+    public static WebDriver driver;
+    public static String Browser;
+    public static String url;
+    public static Logger log = Logger.getLogger(GetClass.class);
+    public static Properties Config = new Properties();
+    public static Properties OR = new Properties();
+    public static FileInputStream fis;
+    //public static ExcelReader excel = new ExcelReader(".\\src\\test\\resources\\excel\\testdata.xlsx");
+    public static WebDriverWait wait;
+    public static String logFilePath;
+    public static String logStartTime = "";
+    public static String logfile;
+    static WebElement dropdown;
 
-		}
-	}
+    public static void beforeTest() throws IOException {
 
-		public static void pageLoad(WebDriver driver) {
-			ExpectedCondition<Boolean> pageload=new ExpectedCondition<Boolean>() {
+        ConfigUtils.readConfig();
+        ConfigUtils.loggerStart();
 
-				public Boolean apply(WebDriver driver) {
-				
-					return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
-				}
-				
-			};
-			DriverUtils.wait.until(pageload);
-		}
-	
+    }
+
+    public static void readConfig() throws IOException {
+        PropertyConfigurator.configure(System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\log4j.properties");
+        try {
+            fis = new FileInputStream(".\\src\\test\\resources\\properties\\Config.properties");
+            Config.load(fis);
+            log.info("config properties loaded");
+
+            ConfigUtils.Browser = Config.getProperty("browser");
+            ConfigUtils.url = Config.getProperty("testsiteurl");
+            logFilePath = new File("LogFolder").getAbsolutePath();
+
+
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
+
+    public static void loggerStart() {
+        try {
+            logStartTime = DriverUtils.dateTime();
+            logfile = ConfigUtils.logFilePath + "\\" + "logfile" + logStartTime + ".log";
+            BasicConfigurator.configure();
+            FileAppender fp = new FileAppender();
+            fp.setFile(logfile);
+            fp.setLayout(new SimpleLayout());
+            log.addAppender(fp);
+            fp.activateOptions();
+            log.setLevel(Level.INFO);
+            log.info("Execution Starting Time is " + logStartTime);
+            log.info("logger started");
+        } catch (Exception e) {
+            e.printStackTrace();
+            log.error(e);
+
+        }
+    }
+
+    public static void pageLoad(WebDriver driver) {
+        ExpectedCondition<Boolean> pageload = driver1 -> ((JavascriptExecutor) driver1).executeScript("return document.readyState").equals("complete");
+        DriverUtils.wait.until(pageload);
+    }
+
 
 }

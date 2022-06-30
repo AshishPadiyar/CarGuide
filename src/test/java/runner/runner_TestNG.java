@@ -15,7 +15,7 @@ import utilities.ConfigUtils;
 import utilities.DriverUtils;
 
 @CucumberOptions(features="src/test/resources/features",
-glue="stepDefinations",
+glue= "stepDefinitions",
 monochrome = true,
 //tags="@HomePageTabs",
 plugin = {
@@ -33,7 +33,7 @@ public class runner_TestNG  extends AbstractTestNGCucumberTests{
 	}
 	
 	@AfterClass
-	public static void writeReport() throws IOException 
+	public static void writeReport()
 	{
 		ConfigUtils.log.info("<log end>");
 		ConfigUtils.log.info("Log end time is "+DriverUtils.dateTime());

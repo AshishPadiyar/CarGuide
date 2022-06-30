@@ -3,11 +3,16 @@
   <groupId>com.w2a</groupId>
   <artifactId>CarGuideProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
+
+	<properties>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
   
 	<dependencies>
-
-
 <!-- POI JARS STARTS -->
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
@@ -54,39 +59,6 @@
 		</dependency>
 
 		<!-- POI JARS ENDS -->
-		
-
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-	
-		
-
-
-		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
-		<dependency>
-			<groupId>org.uncommons</groupId>
-			<artifactId>reportng</artifactId>
-			<version>1.1.4</version>
-			<scope>test</scope>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
-		<dependency>
-			<groupId>com.google.inject</groupId>
-			<artifactId>guice</artifactId>
-			<version>4.2.3</version>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
-			<scope>test</scope>
-		</dependency>
-		
-
 
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
@@ -117,10 +89,10 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+			<version>4.1.1</version>
 		</dependency>
 
-		
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -147,26 +119,22 @@
 			<version>5.7.0</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>5.7.0</version>
-		</dependency>
-		
-		
-		
-		
-		
+
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>4.1.0</version>
+			<version>5.0.3</version>
 		</dependency>
-		<!-- ######################## Latest Extent REports ############################# -->
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-		
-<dependency>
+		<!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.78</version>
+		</dependency>
+
+
+		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports-cucumber4-adapter</artifactId>
 			<version>1.0.12</version>
@@ -182,46 +150,28 @@
 			</exclusions>
 		</dependency>
 		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.3.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
+			<version>7.4.0</version>
 			<scope>compile</scope>
 		</dependency>
-
 	</dependencies>
 	
-	
-	
-	
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<!-- put your configurations here -->
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
-				<configuration>
-				<parallel>methods</parallel>
-				<useUnlimitedThreads>true</useUnlimitedThreads>
-				
-					<testFailureIgnore>false</testFailureIgnore>
-					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
 			</plugin>
-			<!-- Latest cucumber JVM Reports plugin -->
+
 			<plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
@@ -235,17 +185,12 @@
 						</goals>
 						<configuration>
 							<projectName>CarGuideProject</projectName>
-							<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
-							<!--<cucumberOutput>target/cucumber-reports/report.json</cucumberOutput> -->
-							<buildNumber>1</buildNumber>
-							<!--<parallelTesting>false</parallelTesting>-->
 							<skip>false</skip>
-							<inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
-							<jsonFiles> <!-- supports wildcard or name pattern -->
+							<outputDirectory>${project.build.directory}</outputDirectory>
+							<inputDirectory>${project.build.directory}</inputDirectory>
+							<jsonFiles>
 								<param>**/*.json</param>
-							</jsonFiles> <!-- optional, defaults to outputDirectory if not specified -->
-							<classificationDirectory>${project.build.directory}/cucumber-reports</classificationDirectory>
-							<checkBuildResult>false</checkBuildResult>
+							</jsonFiles>
 						</configuration>
 					</execution>
 				</executions>
