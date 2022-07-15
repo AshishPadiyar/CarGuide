@@ -1,17 +1,13 @@
 package stepDefinitions;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import org.testng.Assert;
-
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import pageactions.CarsGuideHomePageActions;
 import pageactions.SearchCarsPageActions;
 import utilities.ConfigUtils;
 import utilities.ExcelUtil;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class TabsOnHomePage {
@@ -22,6 +18,7 @@ public class TabsOnHomePage {
     HashMap<String, String> datamap;
     CarsGuideHomePageActions carsGuideHomePageActions = new CarsGuideHomePageActions();
     SearchCarsPageActions searchCarsPageActions = new SearchCarsPageActions();
+
     public TabsOnHomePage() {
         tc = Hooks.TestName;
         datamap = ExcelUtil.getTestData(tc, "findCarTest");

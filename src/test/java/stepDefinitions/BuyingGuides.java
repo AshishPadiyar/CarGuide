@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageactions.CarsGuideHomePageActions;
@@ -17,6 +18,7 @@ public class BuyingGuides {
     HashMap<String, String> datamap;
     CarsGuideHomePageActions carsGuideHomePageActions = new CarsGuideHomePageActions();
     SearchCarsPageActions searchCarsPageActions = new SearchCarsPageActions();
+
     public BuyingGuides() {
         tc = Hooks.TestName;
         datamap = ExcelUtil.getTestData(tc, "findCarTest");
@@ -40,5 +42,11 @@ public class BuyingGuides {
     public void user_selects_each_buying_guide_article_one_by_one() {
 
         carsGuideHomePageActions.ClickEachBuyingGuide();
+    }
+
+    @And("send http request and checks for broken link")
+    public void sendHttpRequestAndChecksForBrokenLink() {
+        carsGuideHomePageActions.getBrokenLinks();
+
     }
 }

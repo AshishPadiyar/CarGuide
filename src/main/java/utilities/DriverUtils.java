@@ -15,14 +15,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+import org.junit.Assert;
+
 
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.time.Duration;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class DriverUtils {
     public static String browser = ConfigUtils.Browser;
@@ -39,6 +39,7 @@ public class DriverUtils {
     public static XWPFRun run = null;
     public static String wordFilePath = null;
     public static Actions action;
+
 
 
     public static void setUp() {
@@ -130,6 +131,7 @@ public class DriverUtils {
         } catch (Exception e) {
             e.printStackTrace();
             Assert.fail(e.getMessage());
+
         }
 
     }
@@ -188,7 +190,7 @@ public class DriverUtils {
         DriverUtils.driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
     }
 
-    public static String SwitchToWindow() {
+    public static String switchToWindow() {
         Set<String> windows = DriverUtils.driver.getWindowHandles();
         String homePage = DriverUtils.driver.getWindowHandle();
         for (String child_window : windows) {
@@ -200,6 +202,37 @@ public class DriverUtils {
             }
         }
         return homePage;
+
+    }
+
+    public static void getBrokenLinks() {
+        List<WebElement> links = DriverUtils.driver.findElements(By.tagName("a"));
+
+        for (WebElement link : links) {
+
+            String url = link.getAttribute("href");
+
+            //System.out.println(url);
+
+            try {
+
+                HttpURLConnection huc = (HttpURLConnection) (new URL(url).openConnection());
+
+                huc.setRequestMethod("GET");
+
+                huc.connect();
+
+                int respCode = huc.getResponseCode();
+
+                if (respCode >= 400) {
+                    System.out.println(url + " is a broken link");
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
 
     }
 

@@ -93,18 +93,19 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.13</version>
-			<scope>test</scope>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>junit</groupId>-->
+<!--			<artifactId>junit</artifactId>-->
+<!--			<version>4.13.1</version>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
 
 
 		<dependency>
 		    <groupId>io.cucumber</groupId>
 		    <artifactId>cucumber-java</artifactId>
 		    <version>5.7.0</version>
+			<scope>test</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
@@ -112,6 +113,7 @@
 		    <groupId>io.cucumber</groupId>
 		    <artifactId>cucumber-core</artifactId>
 		    <version>5.7.0</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -150,17 +152,23 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>7.3.4</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.4.0</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.1</version>
 			<scope>compile</scope>
 		</dependency>
+		<!--		<dependency>-->
+<!--			<groupId>io.cucumber</groupId>-->
+<!--			<artifactId>cucumber-testng</artifactId>-->
+<!--			<version>7.3.4</version>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.testng</groupId>-->
+<!--			<artifactId>testng</artifactId>-->
+<!--			<version>7.4.0</version>-->
+<!--			<scope>compile</scope>-->
+<!--		</dependency>-->
 	</dependencies>
 	
 
@@ -178,8 +186,8 @@
 				<version>5.3.0</version>
 				<executions>
 					<execution>
-						<id>execution</id>
-						<phase>verify</phase>
+						<id>generate-cucumber-report</id>
+						<phase>test</phase>
 						<goals>
 							<goal>generate</goal>
 						</goals>

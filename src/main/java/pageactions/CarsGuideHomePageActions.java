@@ -5,7 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
+//import org.testng.Assert;
+import org.junit.Assert;
 import pagelocators.CarsGuideHomePageLocators;
 import utilities.ConfigUtils;
 import utilities.DriverUtils;
@@ -88,9 +89,8 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 
     public void CarSearchTextBox(String car) {
         carsGuideHomePageLocators.elesearchTextBox.sendKeys("bmw");
-        Assert.assertTrue(DriverUtils.IsElementPresent(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")), "Car " + car + " not found on the suggestions,search for other car");
+        Assert.assertTrue("Car " + car + " not found on the suggestions,search for other car",DriverUtils.IsElementPresent(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")));
         DriverUtils.driver.findElement(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")).click();
-
     }
 
     public void HomePageFooters() {
@@ -150,7 +150,7 @@ public class CarsGuideHomePageActions implements ObjectRepository {
         List<WebElement> varArticle = carsGuideHomePageLocators.listpopularArticle;
         for (int i = 1; i <= varArticle.size(); i++) {
             DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'popular-articles hidden')]/following-sibling::div/child::div/div[" + i + "]/a[3]")).click();
-            String parentwin = DriverUtils.SwitchToWindow();
+            String parentwin = DriverUtils.switchToWindow();
             String text = carsGuideHomePageLocators.eleArticleText.getText();
             System.out.println("Text of page is " + text);
             DriverUtils.driver.close();
@@ -222,6 +222,11 @@ public class CarsGuideHomePageActions implements ObjectRepository {
             ClickOnMake();
         }
 
+    }
+
+    public void getBrokenLinks()
+    {
+        DriverUtils.getBrokenLinks();
     }
 
 }

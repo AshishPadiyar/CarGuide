@@ -1,3 +1,4 @@
+
 Feature: Test to check the different buying guides for a user
 
   Background: Navigate to carguide site

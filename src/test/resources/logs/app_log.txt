@@ -1,32 +1,13 @@
-INFO    2021-09-05 01:20:33,094 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2021-09-05 01:20:33,102 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Sun_Sep_05_01_20_33_CEST_2021.jpg
-INFO    2021-09-05 01:20:33,102 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2021-09-05 01:20:34,186 [main] org.checkerframework.common.reflection.qual.GetClass  - To check different buying guides on the homepagedocument created
-INFO    2021-09-05 01:20:39,969 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2021-09-05 01:20:41,937 [main] org.checkerframework.common.reflection.qual.GetClass  - User scroll to Buy Guides section
-INFO    2021-09-05 01:20:43,673 [main] org.checkerframework.common.reflection.qual.GetClass  - New Buying Guide page opened is : SUVs under $30k
-INFO    2021-09-05 01:20:44,088 [main] org.checkerframework.common.reflection.qual.GetClass  - 1 Car suggest is : Skoda Kamiq
-INFO    2021-09-05 01:20:44,323 [main] org.checkerframework.common.reflection.qual.GetClass  - 2 Car suggest is : Volkswagen T-Cross
-INFO    2021-09-05 01:20:44,438 [main] org.checkerframework.common.reflection.qual.GetClass  - 3 Car suggest is : Kia Seltos
-INFO    2021-09-05 01:20:44,516 [main] org.checkerframework.common.reflection.qual.GetClass  - 4 Car suggest is : Kia Stonic
-INFO    2021-09-05 01:20:44,579 [main] org.checkerframework.common.reflection.qual.GetClass  - 5 Car suggest is : Hyundai Kona
-INFO    2021-09-05 01:20:51,220 [main] org.checkerframework.common.reflection.qual.GetClass  - New Buying Guide page opened is : 7-seater SUVs
-INFO    2021-09-05 01:20:51,301 [main] org.checkerframework.common.reflection.qual.GetClass  - 1 Car suggest is : Audi Q7
-INFO    2021-09-05 01:20:51,350 [main] org.checkerframework.common.reflection.qual.GetClass  - 2 Car suggest is : Volvo XC90
-INFO    2021-09-05 01:20:51,404 [main] org.checkerframework.common.reflection.qual.GetClass  - 3 Car suggest is : Hyundai Palisade
-INFO    2021-09-05 01:20:51,466 [main] org.checkerframework.common.reflection.qual.GetClass  - 4 Car suggest is : Mazda CX-9
-INFO    2021-09-05 01:20:51,522 [main] org.checkerframework.common.reflection.qual.GetClass  - 5 Car suggest is : Ford Everest
-INFO    2021-09-05 01:20:59,754 [main] org.checkerframework.common.reflection.qual.GetClass  - New Buying Guide page opened is : Dual cab Utes
-INFO    2021-09-05 01:20:59,818 [main] org.checkerframework.common.reflection.qual.GetClass  - 1 Car suggest is : Ford Ranger
-INFO    2021-09-05 01:20:59,873 [main] org.checkerframework.common.reflection.qual.GetClass  - 2 Car suggest is : Isuzu D-Max
-INFO    2021-09-05 01:21:00,004 [main] org.checkerframework.common.reflection.qual.GetClass  - 3 Car suggest is : Mazda BT-50
-INFO    2021-09-05 01:21:00,131 [main] org.checkerframework.common.reflection.qual.GetClass  - 4 Car suggest is : Mitsubishi Triton
-INFO    2021-09-05 01:21:00,199 [main] org.checkerframework.common.reflection.qual.GetClass  - 5 Car suggest is : Toyota HiLux
-INFO    2021-09-05 01:21:08,263 [main] org.checkerframework.common.reflection.qual.GetClass  - New Buying Guide page opened is : SUVs under $50k
-INFO    2021-09-05 01:21:08,363 [main] org.checkerframework.common.reflection.qual.GetClass  - 1 Car suggest is : Toyota RAV4
-INFO    2021-09-05 01:21:08,404 [main] org.checkerframework.common.reflection.qual.GetClass  - 2 Car suggest is : Kia Sorento
-INFO    2021-09-05 01:21:08,458 [main] org.checkerframework.common.reflection.qual.GetClass  - 3 Car suggest is : Hyundai Santa Fe
-INFO    2021-09-05 01:21:08,519 [main] org.checkerframework.common.reflection.qual.GetClass  - 4 Car suggest is : Mazda CX-9
-INFO    2021-09-05 01:21:08,575 [main] org.checkerframework.common.reflection.qual.GetClass  - 5 Car suggest is : Volkswagen Tiguan
-INFO    2021-09-05 01:21:16,200 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
-INFO    2021-09-05 01:21:16,200 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Sun_Sep_05_01_21_16_CEST_2021.jpg
+INFO    2022-07-15 13:42:17,103 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2022-07-15 13:42:17,105 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Fri_Jul_15_13_42_17_CEST_2022.jpg
+INFO    2022-07-15 13:42:17,105 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2022-07-15 13:42:17,813 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate number of tabs on home page document created
+INFO    2022-07-15 13:42:34,143 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2022-07-15 13:42:36,558 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
+INFO    2022-07-15 13:42:36,558 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
+INFO    2022-07-15 13:42:36,559 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
+INFO    2022-07-15 13:42:36,559 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
+INFO    2022-07-15 13:42:36,560 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
+INFO    2022-07-15 13:42:36,560 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
+INFO    2022-07-15 13:42:36,747 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
+INFO    2022-07-15 13:42:36,748 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Fri_Jul_15_13_42_36_CEST_2022.jpg
