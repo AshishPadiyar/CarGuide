@@ -1,13 +1,7 @@
-INFO    2022-07-15 13:42:17,103 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2022-07-15 13:42:17,105 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Fri_Jul_15_13_42_17_CEST_2022.jpg
-INFO    2022-07-15 13:42:17,105 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2022-07-15 13:42:17,813 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate number of tabs on home page document created
-INFO    2022-07-15 13:42:34,143 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2022-07-15 13:42:36,558 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
-INFO    2022-07-15 13:42:36,558 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
-INFO    2022-07-15 13:42:36,559 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
-INFO    2022-07-15 13:42:36,559 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
-INFO    2022-07-15 13:42:36,560 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
-INFO    2022-07-15 13:42:36,560 [main] org.checkerframework.common.reflection.qual.GetClass  - [buy + sell, reviews, news, advice, pricing + specs, guides]
-INFO    2022-07-15 13:42:36,747 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
-INFO    2022-07-15 13:42:36,748 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Fri_Jul_15_13_42_36_CEST_2022.jpg
+INFO    2022-07-18 13:55:20,177 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2022-07-18 13:55:20,178 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Mon_Jul_18_13_55_20_CEST_2022.jpg
+INFO    2022-07-18 13:55:20,179 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2022-07-18 13:55:20,191 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Search TextBox on homepage document created
+INFO    2022-07-18 13:55:29,234 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2022-07-18 13:55:30,675 [main] org.checkerframework.common.reflection.qual.GetClass  -  bmw is typed on the text box
+INFO    2022-07-18 13:55:34,125 [main] org.checkerframework.common.reflection.qual.GetClass  - bmw x1 has following title BMW X1 Review, For Sale, Colours, Interior, Specs & News

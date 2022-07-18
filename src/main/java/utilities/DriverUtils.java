@@ -78,7 +78,16 @@ public class DriverUtils {
             //driver.findElement(by);
             return true;
         } catch (Exception e) {
-            //e.printStackTrace();
+            return false;
+
+        }
+
+    }
+    public static boolean IsElementPresent(WebElement webElement) {
+        try {
+            DynamicWaitForElement(webElement);
+            return true;
+        } catch (Exception e) {
             return false;
 
         }
@@ -88,7 +97,7 @@ public class DriverUtils {
     public static void createWordDoc(String TestCaseName) {
         try {
             File word = new File("TestEvidences");
-            //word.mkdir();
+            word.mkdir();
             wordFilePath = word + "\\" + TestCaseName + ".docx";
             File file = new File(wordFilePath);
             if (file.exists()) {
@@ -172,7 +181,7 @@ public class DriverUtils {
     }
 
     public static void DynamicWaitForElement(WebElement locator) {
-        wait = new WebDriverWait(DriverUtils.driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(DriverUtils.driver, Duration.ofSeconds(20));
         DriverUtils.wait.until(ExpectedConditions.visibilityOf(locator));
     }
 

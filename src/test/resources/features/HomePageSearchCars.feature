@@ -27,8 +27,8 @@ Feature: Test to check car search functionality in homepage
     And  user verify the page title for "<car>"
     Examples:
       | car    |
-      | bmw i3 |
-      | bmw x4 |
+      | bmw x3 |
+      | bmw x1 |
 
 
   Scenario: To check Footer Links on homepage

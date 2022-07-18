@@ -1,12 +1,11 @@
 package pageactions;
 
 import objectrepository.ObjectRepository;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-//import org.testng.Assert;
-import org.junit.Assert;
 import pagelocators.CarsGuideHomePageLocators;
 import utilities.ConfigUtils;
 import utilities.DriverUtils;
@@ -77,20 +76,22 @@ public class CarsGuideHomePageActions implements ObjectRepository {
     }
 
     public void GetCarName(String carName) {
-        //List<WebElement> list=carsGuideHomePageLocators.elecarName;
-        //for(int i =0;i<carName.length();i++) {
         DriverUtils.driver.findElement(By.xpath("//*[@class='home-block home-block-pr']/ul/li/a/span/following-sibling::span[contains(text(),'" + carName + "')]")).click();
-        //}
     }
 
-    public String GetCarTitle() {
-        return carsGuideHomePageLocators.carTitle.getText();
+    public void GetCarTitle(String car) {
+        if (DriverUtils.IsElementPresent(carsGuideHomePageLocators.carTitle)) {
+            ConfigUtils.log.info(car + " has following title " + carsGuideHomePageLocators.carTitle.getText());
+        }
     }
 
     public void CarSearchTextBox(String car) {
-        carsGuideHomePageLocators.elesearchTextBox.sendKeys("bmw");
-        Assert.assertTrue("Car " + car + " not found on the suggestions,search for other car",DriverUtils.IsElementPresent(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")));
-        DriverUtils.driver.findElement(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")).click();
+        if(DriverUtils.IsElementPresent(carsGuideHomePageLocators.elesearchTextBox)) {
+            carsGuideHomePageLocators.elesearchTextBox.sendKeys("bmw");
+            Assert.assertTrue("Car " + car + " not found on the suggestions,search for other car", DriverUtils.IsElementPresent(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")));
+              //  DriverUtils.driver.findElement(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")).click();
+            DriverUtils.driver.findElement(By.xpath("//*[@id='cgsearch-suggestions']//a[@data-suggested='" + car + "']")).click();
+        }
     }
 
     public void HomePageFooters() {
@@ -224,8 +225,7 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 
     }
 
-    public void getBrokenLinks()
-    {
+    public void getBrokenLinks() {
         DriverUtils.getBrokenLinks();
     }
 

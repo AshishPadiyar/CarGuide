@@ -81,8 +81,8 @@ public class SearchCarsOnHomePage {
     @And("user verify the page title for {string}")
     public void user_verify_the_page_title_for_car(String car) {
 
-        String varCarTitle = carsGuideHomePageActions.GetCarTitle();
-        System.out.println("Car title for " + car + " is " + varCarTitle);
+       carsGuideHomePageActions.GetCarTitle(car);
+
     }
 
     @Then("user try to search for {string}")

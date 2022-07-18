@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e8d933a-2366-4f07-bb4f-4a0c7c198feb" name="Default Changelist" comment="Removed TestNG assertions">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9e8d933a-2366-4f07-bb4f-4a0c7c198feb" name="Default Changelist" comment="Ignored TestsEvidences,Screenshot and logfolder on git push">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SearchCarsOnHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SearchCarsOnHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HomePageSearchCars.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HomePageSearchCars.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,34 +61,16 @@
       <recent name="objectrepository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunnerClass">
-    <configuration name="Feature: GettheTabsInHomePage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GettheTabsInHomePage.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="CarGuideProject" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: GettheTabsInHomePage" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: HomePageSearchCars" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: To check Search TextBox on homepage">
+    <configuration name="Scenario: Scenario: To check Most popular Reviews" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HomePageSearchCars.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CarGuideProject" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: HomePageSearchCars" />
+      <option name="NAME_FILTER" value="^Scenario\: To check Most popular Reviews$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Scenario\: To check Most popular Reviews$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Scenario: To check Most popular Reviews" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +82,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: SearchCars" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: To check Search TextBox on homepage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchCars.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/HomePageSearchCars.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CarGuideProject" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: SearchCars" />
+      <option name="NAME_FILTER" value="^To check Search TextBox on homepage$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^To check Search TextBox on homepage$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: To check Search TextBox on homepage" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -123,6 +111,26 @@
       <option name="NAME_FILTER" value="^Validate search cars feature at home page$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate search cars feature at home page$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Validate search cars feature at home page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Validate search cars page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SearchCars.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CarGuideProject" />
+      <option name="NAME_FILTER" value="^Validate search cars page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate search cars page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate search cars page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -171,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: To check Search TextBox on homepage" />
+        <item itemvalue="Cucumber Java.Scenario: Scenario: To check Most popular Reviews" />
+        <item itemvalue="Cucumber Java.Scenario: Validate search cars page" />
         <item itemvalue="Cucumber Java.Scenario: check broken links on homepage" />
         <item itemvalue="Cucumber Java.Scenario: Validate search cars feature at home page" />
-        <item itemvalue="Cucumber Java.Feature: SearchCars" />
-        <item itemvalue="Cucumber Java.Feature: HomePageSearchCars" />
-        <item itemvalue="Cucumber Java.Feature: GettheTabsInHomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657885833228</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ignored TestsEvidences,Screenshot and logfolder on git push">
+      <created>1657885995412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657885995412</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,15 +235,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated to selenium 4 ,removed unwanted dependencies, added cucumber html reporting plugin, refactored code." />
     <MESSAGE value="Removed TestNG assertions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed TestNG assertions" />
+    <MESSAGE value="Ignored TestsEvidences,Screenshot and logfolder on git push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignored TestsEvidences,Screenshot and logfolder on git push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utilities/ConfigUtils.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
