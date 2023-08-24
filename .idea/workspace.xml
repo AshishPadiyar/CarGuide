@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e8d933a-2366-4f07-bb4f-4a0c7c198feb" name="Default Changelist" comment="Ignored TestsEvidences,Screenshot and logfolder on git push">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
       <recent name="objectrepository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunnerClass">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Validate search cars feature at home page">
     <configuration name="Feature: BuyingGuides" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/BuyingGuides.feature" />
@@ -175,10 +173,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Validate search cars feature at home page" />
         <item itemvalue="Cucumber Java.Feature: HomePageSearchCars" />
         <item itemvalue="Cucumber Java.Scenario: To check Search TextBox on hompage" />
         <item itemvalue="Cucumber Java.Scenario: Scenario: To check Most populer Reviews" />
-        <item itemvalue="Cucumber Java.Scenario: Validate search cars feature at home page" />
         <item itemvalue="Cucumber Java.Feature: BuyingGuides" />
       </list>
     </recent_temporary>
