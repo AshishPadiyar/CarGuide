@@ -7,31 +7,8 @@
     <list default="true" id="9e8d933a-2366-4f07-bb4f-4a0c7c198feb" name="Default Changelist" comment="Ignored TestsEvidences,Screenshot and logfolder on git push">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarGuideProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CarGuideProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Sun_Sep_05_01_20_39_CEST_2021.jpg/screenshot4102790595687127847.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Sun_Sep_05_01_20_41_CEST_2021.jpg/screenshot6666953457323671515.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Sun_Sep_05_01_20_43_CEST_2021.jpg/screenshot5267139770884481369.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Sun_Sep_05_01_20_50_CEST_2021.jpg/screenshot8783657356621767099.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Sun_Sep_05_01_20_58_CEST_2021.jpg/screenshot1447154159713805866.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Sun_Sep_05_01_21_07_CEST_2021.jpg/screenshot7024648487474718046.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageactions/CarsGuideHomePageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageactions/SearchCarsPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageactions/SearchCarsPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DriverUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/BuyingGuides.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/BuyingGuides.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/MakeAndModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/MakeAndModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/PopularArticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/PopularArticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SearchCarsOnHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SearchCarsOnHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SearchCarsStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SearchCarsStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/TabsOnHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/TabsOnHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/BuyingGuides.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/BuyingGuides.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GettheTabsInHomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GettheTabsInHomePage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HomePageSearchCars.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HomePageSearchCars.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MakeAndModel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MakeAndModel.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MostPopulorArticles.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MostPopulorArticles.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SearchCars.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SearchCars.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TestingGithub.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logs/app_log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
