@@ -127,14 +127,14 @@ public class CarsGuideHomePageActions implements ObjectRepository {
         for (int i = 1; i <= varGuide.size(); i++) {
             DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'home-shared-block')]/div/a[" + i + "]")).click();
             //String parentwin = DriverUtils.SwitchToWindow();
-//            String text = carsGuideHomePageLocators.eleBuyingGuidePageText.getText();
-//            System.out.println("New Buying Guide page opened is :  " + text);
-//
-//            List<WebElement> varBestCarAsPerExperts = carsGuideHomePageLocators.bestCarAsPerExperts;
-//            for (int j = 1; j <= varBestCarAsPerExperts.size(); j++) {
-//                String carText = DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'topmodels-rows')]/div[contains(@id,'expert')][" + j + "]//div/h3/a")).getText();
-//                System.out.println(j + " Car suggest is : " + carText);
-//            }
+            String text = carsGuideHomePageLocators.eleBuyingGuidePageText.getText();
+            System.out.println("New Buying Guide page opened is :  " + text);
+
+            List<WebElement> varBestCarAsPerExperts = carsGuideHomePageLocators.bestCarAsPerExperts;
+            for (int j = 1; j <= varBestCarAsPerExperts.size(); j++) {
+                String carText = DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'topmodels-rows')]/div[contains(@id,'expert')][" + j + "]//div/h3/a")).getText();
+                System.out.println(j + " Car suggest is : " + carText);
+            }
             DriverUtils.driver.navigate().back();
             //DriverUtils.MoveBackToPage();
             //DriverUtils.driver.switchTo().window(parentwin);

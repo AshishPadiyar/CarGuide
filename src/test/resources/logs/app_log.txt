@@ -1,10 +1,10 @@
-INFO    2023-08-24 18:17:32,524 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2023-08-24 18:17:32,533 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Thu_Aug_24_18_17_32_CEST_2023.jpg
-INFO    2023-08-24 18:17:32,534 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2023-08-24 18:17:33,154 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate search cars feature at home pagedocument created
-INFO    2023-08-24 18:17:42,215 [main] org.checkerframework.common.reflection.qual.GetClass  - Chrome Browser Launched !!!
-INFO    2023-08-24 18:17:44,525 [main] org.checkerframework.common.reflection.qual.GetClass  - url launched
-INFO    2023-08-24 18:17:45,535 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2023-08-24 18:17:47,169 [main] org.checkerframework.common.reflection.qual.GetClass  - User select the car brand
-INFO    2023-08-24 18:17:47,462 [main] org.checkerframework.common.reflection.qual.GetClass  - User select the car Model
-INFO    2023-08-24 18:17:53,271 [main] org.checkerframework.common.reflection.qual.GetClass  - User clicks on show me cars
+INFO    2023-08-24 18:22:20,512 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2023-08-24 18:22:20,524 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Thu_Aug_24_18_22_20_CEST_2023.jpg
+INFO    2023-08-24 18:22:20,524 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2023-08-24 18:22:21,163 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate search cars feature at home pagedocument created
+INFO    2023-08-24 18:22:30,333 [main] org.checkerframework.common.reflection.qual.GetClass  - Chrome Browser Launched !!!
+INFO    2023-08-24 18:22:33,423 [main] org.checkerframework.common.reflection.qual.GetClass  - url launched
+INFO    2023-08-24 18:22:34,861 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
+INFO    2023-08-24 18:22:36,653 [main] org.checkerframework.common.reflection.qual.GetClass  - User select the car brand
+INFO    2023-08-24 18:22:37,184 [main] org.checkerframework.common.reflection.qual.GetClass  - User select the car Model
+INFO    2023-08-24 18:22:45,477 [main] org.checkerframework.common.reflection.qual.GetClass  - User clicks on show me cars
