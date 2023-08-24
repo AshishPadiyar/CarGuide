@@ -82,35 +82,39 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.1.1</version>
+            <version>4.10.0</version>
         </dependency>
 
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>5.7.0</version>
-            <scope>test</scope>
+            <version>7.13.0</version>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-core</artifactId>
-            <version>5.7.0</version>
-            <scope>test</scope>
+            <version>7.13.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>5.7.0</version>
+            <version>7.13.0</version>
             <scope>test</scope>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.0.3</version>
+            <version>5.5.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
         <dependency>
@@ -124,32 +128,23 @@
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports-cucumber4-adapter</artifactId>
             <version>1.0.12</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.cucumber</groupId>
-                    <artifactId>cucumber-java</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>io.cucumber</groupId>
-                    <artifactId>cucumber-core</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
-            <scope>compile</scope>
+            <version>4.13.2</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
             <version>7.3.4</version>
         </dependency>
+
+
     </dependencies>
 
 
-   <build>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -157,30 +152,30 @@
                 <version>3.1.2</version>
             </plugin>
 
-<!--            <plugin>-->
-<!--                <groupId>net.masterthought</groupId>-->
-<!--                <artifactId>maven-cucumber-reporting</artifactId>-->
-<!--                <version>5.3.0</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>generate-cucumber-report</id>-->
-<!--                        <phase>test</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>generate</goal>-->
-<!--                        </goals>-->
-<!--                        <configuration>-->
-<!--                            <projectName>CarGuideProject</projectName>-->
-<!--                            <skip>false</skip>-->
-<!--                            <outputDirectory>${project.build.directory}</outputDirectory>-->
-<!--                            <inputDirectory>${project.build.directory}</inputDirectory>-->
-<!--                            <jsonFiles>-->
-<!--                                <param>**/*.json</param>-->
-<!--                            </jsonFiles>-->
-<!--                        </configuration>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
- </plugins>
+            <!--            <plugin>-->
+            <!--                <groupId>net.masterthought</groupId>-->
+            <!--                <artifactId>maven-cucumber-reporting</artifactId>-->
+            <!--                <version>5.3.0</version>-->
+            <!--                <executions>-->
+            <!--                    <execution>-->
+            <!--                        <id>generate-cucumber-report</id>-->
+            <!--                        <phase>test</phase>-->
+            <!--                        <goals>-->
+            <!--                            <goal>generate</goal>-->
+            <!--                        </goals>-->
+            <!--                        <configuration>-->
+            <!--                            <projectName>CarGuideProject</projectName>-->
+            <!--                            <skip>false</skip>-->
+            <!--                            <outputDirectory>${project.build.directory}</outputDirectory>-->
+            <!--                            <inputDirectory>${project.build.directory}</inputDirectory>-->
+            <!--                            <jsonFiles>-->
+            <!--                                <param>**/*.json</param>-->
+            <!--                            </jsonFiles>-->
+            <!--                        </configuration>-->
+            <!--                    </execution>-->
+            <!--                </executions>-->
+            <!--            </plugin>-->
+        </plugins>
     </build>
 
 </project>
