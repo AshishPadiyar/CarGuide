@@ -1,4 +1,4 @@
-
+@HomePage
 Feature: Test to check  car search functionality in homepage
 
   Background: Navigate to carguide site
@@ -32,7 +32,7 @@ Feature: Test to check  car search functionality in homepage
       |bmw x1|
       |bmw x3|
 
-  @HomePage
+  
   Scenario: To check Footer Links on hompage
     And  user scrolls to the button of the page
     Then  User fetch the name of all the links
