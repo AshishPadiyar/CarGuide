@@ -49,7 +49,7 @@ public class DriverUtils {
             options.addArguments("--disable-extensions");
             options.addArguments("--disable-infobars");
             options.addArguments("--remote-allow-origins=*");
-           // options.addArguments("--headless=new");
+            options.addArguments("--headless=new");
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
             driver.get(ConfigUtils.url);
