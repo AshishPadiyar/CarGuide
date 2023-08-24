@@ -1,6 +1,7 @@
 package pageactions;
 
 import objectrepository.ObjectRepository;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -10,7 +11,7 @@ import utilities.DriverUtils;
 
 public class SearchCarsPageActions implements ObjectRepository {
 
-	SearchCarsPageLocators searchCarsPageLocators;
+	SearchCarsPageLocators searchCarsPageLocators = null;
 
 	// Constructor
 	public SearchCarsPageActions() {
@@ -27,10 +28,10 @@ public class SearchCarsPageActions implements ObjectRepository {
 	}
 
 	public void selectCarModel(String carModel) {
-		DriverUtils.DynamicWaitForXpath(eleHomePageModelDrpDown);
+		DriverUtils.DynamicWaitXpath(eleHomePageModelDrpDown);
 		Select selectModel = new Select(searchCarsPageLocators.selectModel);
 		selectModel.selectByVisibleText(carModel);
-	}	
+	}
 
 	public void selectLocation(String loc) {
 

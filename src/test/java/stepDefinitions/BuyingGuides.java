@@ -35,6 +35,8 @@ public class BuyingGuides {
     @When("user scrolls the window till Buying Guides")
     public void user_scrolls_the_window_till_Buying_Guides() {
 
+//		System.out.println("Tc name is: "+datamap.get("Testcase"));
+//		System.out.println("usename  is: "+datamap.get("username"));
         carsGuideHomePageActions.ScrollToBuyingGuides();
     }
 
@@ -42,11 +44,5 @@ public class BuyingGuides {
     public void user_selects_each_buying_guide_article_one_by_one() {
 
         carsGuideHomePageActions.ClickEachBuyingGuide();
-    }
-
-    @And("send http request and checks for broken link")
-    public void sendHttpRequestAndChecksForBrokenLink() {
-        carsGuideHomePageActions.getBrokenLinks();
-
     }
 }

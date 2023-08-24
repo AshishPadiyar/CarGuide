@@ -25,6 +25,17 @@ public class MakeAndModel {
 
 //############ Step definitions	#########################
 
+//	@Given("User on the homepage {string}")
+//	public void user_on_the_homepage(String string) {
+//		System.out.println("test data"+datamap);
+//	}
+
+//	@When("User validate homepage with title {string}")
+//	public void user_validate_homepage_with_title(String expected) {
+//		String actual=carsGuideHomePageActions.SignIntitle();
+//		Assert.assertEquals(actual, expected);
+//	}
+
     @And("user clicks on Make")
     public void userClicksOnMake() {
         carsGuideHomePageActions.ClickOnMake();

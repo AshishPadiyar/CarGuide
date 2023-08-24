@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class CarsGuideHomePageActions implements ObjectRepository {
 
-    CarsGuideHomePageLocators carsGuideHomePageLocators; //creating a instance class variable
+    CarsGuideHomePageLocators carsGuideHomePageLocators = null;//creating a instance class variable
 
     public CarsGuideHomePageActions() {
         //this.carsGuideHomePageLocators reference var will assign value to carsGuideHomePageLocators instance class var
@@ -41,12 +41,12 @@ public class CarsGuideHomePageActions implements ObjectRepository {
         action.moveToElement(carsGuideHomePageLocators.BuyandSell).perform();
     }
 
-    public void clickOnSearchCars() {
+    public void clickonSearchCars() {
         carsGuideHomePageLocators.SearchCarsSubMenu.click();
         DriverUtils.writeWordDocument("User at New & Used Car Search - carsguide", true);
     }
 
-    public void clickOnUsedCars() {
+    public void clickonUsedCars() {
         carsGuideHomePageLocators.SearchUsedCarsSubMenu.click();
     }
 
@@ -62,8 +62,8 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 
     }
 
-    public ArrayList<String> HomePageTabs() {
-        ArrayList<String> tabName = new ArrayList<>();
+    public ArrayList HomePageTabs() {
+        ArrayList tabName = new ArrayList();
         List<WebElement> tabs = DriverUtils.driver.findElements(By.xpath("//*[@class='uhf-menu-wrapper']/div/ul/li"));
         for (int i = 1; i <= tabs.size(); i++) {
             tabName.add(DriverUtils.driver.findElement(By.xpath("//*[@class='uhf-menu-wrapper']/div/ul/li[" + i + "]/a")).getText());
@@ -76,22 +76,26 @@ public class CarsGuideHomePageActions implements ObjectRepository {
     }
 
     public void GetCarName(String carName) {
-        DriverUtils.driver.findElement(By.xpath("//*[@class='home-block home-block-pr']/ul/li/a/span/following-sibling::span[contains(text(),'" + carName + "')]")).click();
+        //List<WebElement> list=carsGuideHomePageLocators.elecarName;
+        //for(int i =0;i<carName.length();i++) {
+
+        if (DriverUtils.IsElementPresent(By.xpath("//*[@class='home-block home-block-pr']/ul/li/a/span/following-sibling::span[contains(text(),'" + carName + "')]"))) {
+            DriverUtils.driver.findElement(By.xpath("//*[@class='home-block home-block-pr']/ul/li/a/span/following-sibling::span[contains(text(),'" + carName + "')]")).click();
+        } else {
+            Assert.fail(carName + " Not found .please choose some other car");
+        }
+
     }
 
-    public void GetCarTitle(String car) {
-        if (DriverUtils.IsElementPresent(carsGuideHomePageLocators.carTitle)) {
-            ConfigUtils.log.info(car + " has following title " + carsGuideHomePageLocators.carTitle.getText());
-        }
+    public String GetCarTitle() {
+        return carsGuideHomePageLocators.carTitle.getText();
     }
 
     public void CarSearchTextBox(String car) {
-        if(DriverUtils.IsElementPresent(carsGuideHomePageLocators.elesearchTextBox)) {
-            carsGuideHomePageLocators.elesearchTextBox.sendKeys("bmw");
-            Assert.assertTrue("Car " + car + " not found on the suggestions,search for other car", DriverUtils.IsElementPresent(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")));
-              //  DriverUtils.driver.findElement(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")).click();
-            DriverUtils.driver.findElement(By.xpath("//*[@id='cgsearch-suggestions']//a[@data-suggested='" + car + "']")).click();
-        }
+        DriverUtils.driver.navigate().refresh();
+        carsGuideHomePageLocators.elesearchTextBox.sendKeys("bmw");
+        DriverUtils.DynamicWaitXpathCss("#cgsearch-suggestions>li>a[data-suggested='" + car + "']");
+        DriverUtils.driver.findElement(By.cssSelector("#cgsearch-suggestions>li>a[data-suggested='" + car + "']")).click();
     }
 
     public void HomePageFooters() {
@@ -115,8 +119,6 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 
     public void ScrollToBuyingGuides() {
         DriverUtils.ScrollToElement(carsGuideHomePageLocators.buyingGuides);
-        DriverUtils.writeWordDocument("User scroll to Buy Guides section", true);
-        ConfigUtils.log.info("User scroll to Buy Guides section");
     }
 
 
@@ -125,33 +127,27 @@ public class CarsGuideHomePageActions implements ObjectRepository {
         for (int i = 1; i <= varGuide.size(); i++) {
             DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'home-shared-block')]/div/a[" + i + "]")).click();
             //String parentwin = DriverUtils.SwitchToWindow();
-            DriverUtils.DynamicWaitForElement(carsGuideHomePageLocators.eleBuyingGuidePageText);
             String text = carsGuideHomePageLocators.eleBuyingGuidePageText.getText();
             System.out.println("New Buying Guide page opened is :  " + text);
-            DriverUtils.writeWordDocument("New Buying Guide page opened is : " + text, true);
-            ConfigUtils.log.info("New Buying Guide page opened is : " + text);
 
             List<WebElement> varBestCarAsPerExperts = carsGuideHomePageLocators.bestCarAsPerExperts;
             for (int j = 1; j <= varBestCarAsPerExperts.size(); j++) {
                 String carText = DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'topmodels-rows')]/div[contains(@id,'expert')][" + j + "]//div/h3/a")).getText();
                 System.out.println(j + " Car suggest is : " + carText);
-                ConfigUtils.log.info(j + " Car suggest is : " + carText);
-
             }
             DriverUtils.driver.navigate().back();
-            DriverUtils.DynamicWaitForElement(carsGuideHomePageLocators.buyingGuides);
-
             //DriverUtils.MoveBackToPage();
             //DriverUtils.driver.switchTo().window(parentwin);
         }
 
     }
 
+
     public void clickArticleLink() {
         List<WebElement> varArticle = carsGuideHomePageLocators.listpopularArticle;
         for (int i = 1; i <= varArticle.size(); i++) {
             DriverUtils.driver.findElement(By.xpath("//*[contains(@class,'popular-articles hidden')]/following-sibling::div/child::div/div[" + i + "]/a[3]")).click();
-            String parentwin = DriverUtils.switchToWindow();
+            String parentwin = DriverUtils.SwitchToWindow();
             String text = carsGuideHomePageLocators.eleArticleText.getText();
             System.out.println("Text of page is " + text);
             DriverUtils.driver.close();
@@ -167,13 +163,13 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 
     public void ClickOnModel() {
         List<WebElement> makeList = carsGuideHomePageLocators.eleMakeList;
-        WebElement eleMakeList;
+        WebElement eleMakeList = null;
         for (int i = 1; i <= 5; i++) {
             eleMakeList = DriverUtils.driver.findElement(By.xpath("//*[@id='uhf-make-search']/child::ul/child::li[" + i + "]/a"));
             System.out.println("Car Make : " + eleMakeList.getText());
             eleMakeList.click();
 
-            DriverUtils.DynamicWaitForXpath(eleHomePageTopPanel);
+            DriverUtils.DynamicWaitXpath(eleHomePageTopPanel);
 
             List<WebElement> modelList = carsGuideHomePageLocators.eleModelList;
             for (int j = 1; j <= modelList.size(); j++) {
@@ -190,15 +186,15 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 
     public void retrieveMakeAndModelFromMap() {
         List<WebElement> makeList = carsGuideHomePageLocators.eleMakeList;
-        Map<String, List<String>> hMap = new HashMap<>();
-        List<String> listModel = new ArrayList<>();
+        Map<String, List<String>> hMap = new HashMap<String, List<String>>();
+        List<String> listModel = new ArrayList<String>();
 
         for (int i = 1; i <= 5; i++) {
             WebElement eleMakeList = DriverUtils.driver.findElement(By.xpath("//*[@id='uhf-make-search']/child::ul/child::li[" + i + "]/a"));
             String strMakeList = eleMakeList.getText();
             eleMakeList.click();
 
-            DriverUtils.DynamicWaitForXpath(eleHomePageTopPanel);
+            DriverUtils.DynamicWaitXpath(eleHomePageTopPanel);
 
             List<WebElement> modelList = carsGuideHomePageLocators.eleModelList;
             for (int j = 1; j <= modelList.size(); j++) {
@@ -225,10 +221,4 @@ public class CarsGuideHomePageActions implements ObjectRepository {
 
     }
 
-    public void getBrokenLinks() {
-        DriverUtils.getBrokenLinks();
-    }
-
 }
-
-

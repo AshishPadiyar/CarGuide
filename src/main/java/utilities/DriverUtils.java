@@ -3,26 +3,23 @@ package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.util.Units;
-import org.apache.poi.xwpf.usermodel.BreakType;
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
-import org.apache.poi.xwpf.usermodel.XWPFParagraph;
-import org.apache.poi.xwpf.usermodel.XWPFRun;
+import org.apache.poi.xwpf.usermodel.*;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.junit.Assert;
-
 
 import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.time.Duration;
 import java.util.*;
+
+import static utilities.ConfigUtils.log;
 
 public class DriverUtils {
     public static String browser = ConfigUtils.Browser;
@@ -35,16 +32,15 @@ public class DriverUtils {
     public static Wait<WebDriver> fluentWait;
     public static XWPFDocument document = null;
     public static XWPFParagraph par = null;
-
     public static XWPFRun run = null;
     public static String wordFilePath = null;
     public static Actions action;
 
 
+    public static void setUp() throws IOException {
 
-    public static void setUp() {
         if (browser.equalsIgnoreCase("chrome")) {
-            Map<String, Object> prefs = new HashMap<>();
+            Map<String, Object> prefs = new HashMap<String, Object>();
             prefs.put("profile.default_content_setting_values.notifications", 2);
             prefs.put("credentials_enable_service", false);
             prefs.put("profile.password_manager_enabled", false);
@@ -52,42 +48,31 @@ public class DriverUtils {
             options.setExperimentalOption("prefs", prefs);
             options.addArguments("--disable-extensions");
             options.addArguments("--disable-infobars");
-            WebDriverManager.chromedriver().driverVersion("86.0.4240.75").setup();
+            options.addArguments("--remote-allow-origins=*");
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
-            //log.info("Chrome Browser Launched !!!");
+            driver.get(ConfigUtils.url);
+            log.info("Chrome Browser Launched !!!");
         } else if (browser.equalsIgnoreCase("firefox")) {
 
-            WebDriverManager.firefoxdriver().setup();
+            //WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
-            //log.info("Firefox Browser Launched !!!");
+            log.info("Firefox Browser Launched !!!");
         }
 
         driver.get(ConfigUtils.url);
-        //log.info("url launched");
-        //DbManager.setMysqlDbConnection();
-        //log.info("Database connection established");
+        log.info("url launched");
         driver.manage().window().maximize();
-        //driver.manage().timeouts().implicitlyWait(Integer.parseInt(ConfigUtils.Config.getProperty("implicit.wait")), TimeUnit.SECONDS);
-        //	wait = new WebDriverWait(driver,Integer.parseInt(ConfigUtils.Config.getProperty("explicit.wait")));
     }
 
 
     public static boolean IsElementPresent(By by) {
         try {
-            DynamicWaitForBy(by);
-            //driver.findElement(by);
+
+            driver.findElement(by);
             return true;
         } catch (Exception e) {
-            return false;
-
-        }
-
-    }
-    public static boolean IsElementPresent(WebElement webElement) {
-        try {
-            DynamicWaitForElement(webElement);
-            return true;
-        } catch (Exception e) {
+            //e.printStackTrace();
             return false;
 
         }
@@ -97,23 +82,22 @@ public class DriverUtils {
     public static void createWordDoc(String TestCaseName) {
         try {
             File word = new File("TestEvidences");
-            word.mkdir();
             wordFilePath = word + "\\" + TestCaseName + ".docx";
             File file = new File(wordFilePath);
             if (file.exists()) {
-                //System.out.println("file already exists");
+                System.out.println("file already exists");
                 wordFilePath = word + "\\" + TestCaseName + ".docx";
             }
             document = new XWPFDocument();
             par = document.createParagraph();
             run = par.createRun();
 
-            FileOutputStream fos = new FileOutputStream(wordFilePath);
+            FileOutputStream fos = new FileOutputStream(new File(wordFilePath));
 
             document.write(fos);
             fos.close();
-            System.out.println(TestCaseName + " document created");
-            ConfigUtils.log.info(TestCaseName + " document created");
+            System.out.println(TestCaseName + "document created");
+            log.info(TestCaseName + "document created");
 
         } catch (Exception e) {
             // TODO Auto-generated catch block
@@ -127,8 +111,8 @@ public class DriverUtils {
             run.addBreak();
             run.addCarriageReturn();
             if (screenShot) {
-                InputStream pic = new FileInputStream(Screenshot());
-                run.addPicture(pic, document.PICTURE_TYPE_JPEG, "", Units.toEMU(440), Units.toEMU(440));
+                InputStream pic = new FileInputStream(screenShot());
+                run.addPicture(pic, Document.PICTURE_TYPE_JPEG, "", Units.toEMU(440), Units.toEMU(440));
                 run.addBreak();
                 run.addBreak();
                 run.addBreak(BreakType.PAGE);
@@ -139,8 +123,7 @@ public class DriverUtils {
 
         } catch (Exception e) {
             e.printStackTrace();
-            Assert.fail(e.getMessage());
-
+//            Assert.fail(e.getMessage());
         }
 
     }
@@ -148,15 +131,16 @@ public class DriverUtils {
     public static String dateTime() {
 
         Date d = new Date();
-        return d.toString().replace(":", "_").replace(" ", "_").concat(".jpg");
+        String date = d.toString().replace(":", "_").replace(" ", "_").concat(".jpg");
+        return date;
 
     }
 
-    public static File Screenshot() {
-        String newDate = dateTime();
+    public static File screenShot() {
+        String newdate = dateTime();
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFileToDirectory(screenshot, new File(System.getProperty("user.dir") + "\\Screenshots\\" + newDate));
+            FileUtils.copyFileToDirectory(screenshot, new File(System.getProperty("user.dir") + "\\screenshot\\" + newdate));
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -175,34 +159,35 @@ public class DriverUtils {
     }
 
 
-    public static void DynamicWaitForXpath(String locator) {
+    public static void DynamicWaitXpath(String locator) {
         wait = new WebDriverWait(DriverUtils.driver, Duration.ofSeconds(10));
         DriverUtils.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
 
-    public static void DynamicWaitForElement(WebElement locator) {
-        wait = new WebDriverWait(DriverUtils.driver, Duration.ofSeconds(20));
-        DriverUtils.wait.until(ExpectedConditions.visibilityOf(locator));
-    }
-
-    public static void DynamicWaitForBy(By by) {
-        wait = new WebDriverWait(DriverUtils.driver, Duration.ofSeconds(10));
-        DriverUtils.wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-    }
-
-    public static void DynamicWaitForCss(String locator) {
+    public static void DynamicWaitXpathCss(String locator) {
         wait = new WebDriverWait(DriverUtils.driver, Duration.ofSeconds(10));
         DriverUtils.wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator)));
     }
 
-    public static void ScrollToBottom() {
+    public static void setFluentWait() {
+        Wait<WebDriver> fluentWait = new FluentWait<>(DriverUtils.driver)
+                .withTimeout(Duration.ofSeconds(30))
+                .pollingEvery(Duration.ofSeconds(5))
+                .ignoring(NoSuchElementException.class);
+        fluentWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("example"))).click();
+    }
+
+    public static void ScrollToButtom() {
         DriverUtils.driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
     }
 
-    public static String switchToWindow() {
+    public static String SwitchToWindow() {
         Set<String> windows = DriverUtils.driver.getWindowHandles();
         String homePage = DriverUtils.driver.getWindowHandle();
-        for (String child_window : windows) {
+        Iterator<String> itr = windows.iterator();
+        while (itr.hasNext()) {
+
+            String child_window = itr.next();
 
             if (!homePage.equals(child_window)) {
                 driver.switchTo().window(child_window);
@@ -214,35 +199,7 @@ public class DriverUtils {
 
     }
 
-    public static void getBrokenLinks() {
-        List<WebElement> links = DriverUtils.driver.findElements(By.tagName("a"));
-
-        for (WebElement link : links) {
-
-            String url = link.getAttribute("href");
-
-            //System.out.println(url);
-
-            try {
-
-                HttpURLConnection huc = (HttpURLConnection) (new URL(url).openConnection());
-
-                huc.setRequestMethod("GET");
-
-                huc.connect();
-
-                int respCode = huc.getResponseCode();
-
-                if (respCode >= 400) {
-                    System.out.println(url + " is a broken link");
-                }
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-
+    public void setImplicitTimeWait() {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
-
 }

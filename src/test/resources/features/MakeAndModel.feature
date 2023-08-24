@@ -1,15 +1,19 @@
-Feature: Test to check the number of Cars under certain Model in homepage
 
+Feature: Test to check the number of tabs in homepage
+
+  # here you will write your user story
 
   Background: Navigate to carguide site
-    Given user is on home page of https://www.carsguide.com.au/ with title Sign up / Sign in
+    Given I am on the home page "https://www.carsguide.com.au/"
+    When User at home page with title "Sign up / Sign in"
 
 
-  Scenario: To check numbers of Cars under particular model on the homepage
+  @MakeAndModel
+  Scenario: To check Most popular Articles on the homepage
     And  user clicks on Make
     Then User selects car and display all the model
 
 
-  Scenario: To check numbers of Cars under particular model on the homepage
+  Scenario: To check Most popular Articles on the homepage
     And  user clicks on Make
     Then User selects car and display all the model in a map

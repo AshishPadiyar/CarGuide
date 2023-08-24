@@ -1,7 +1,8 @@
-INFO    2022-07-18 13:55:20,177 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
-INFO    2022-07-18 13:55:20,178 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Mon_Jul_18_13_55_20_CEST_2022.jpg
-INFO    2022-07-18 13:55:20,179 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
-INFO    2022-07-18 13:55:20,191 [main] org.checkerframework.common.reflection.qual.GetClass  - To check Search TextBox on homepage document created
-INFO    2022-07-18 13:55:29,234 [main] org.checkerframework.common.reflection.qual.GetClass  - User is at homepage
-INFO    2022-07-18 13:55:30,675 [main] org.checkerframework.common.reflection.qual.GetClass  -  bmw is typed on the text box
-INFO    2022-07-18 13:55:34,125 [main] org.checkerframework.common.reflection.qual.GetClass  - bmw x1 has following title BMW X1 Review, For Sale, Colours, Interior, Specs & News
+INFO    2023-08-24 16:59:34,129 [main] org.checkerframework.common.reflection.qual.GetClass  - config properties loaded
+INFO    2023-08-24 16:59:34,131 [main] org.checkerframework.common.reflection.qual.GetClass  - Execution Starting Time is Thu_Aug_24_16_59_34_CEST_2023.jpg
+INFO    2023-08-24 16:59:34,131 [main] org.checkerframework.common.reflection.qual.GetClass  - logger started
+INFO    2023-08-24 16:59:34,139 [main] org.checkerframework.common.reflection.qual.GetClass  - Validate search cars pagedocument created
+INFO    2023-08-24 16:59:39,342 [main] org.checkerframework.common.reflection.qual.GetClass  - Chrome Browser Launched !!!
+INFO    2023-08-24 16:59:41,406 [main] org.checkerframework.common.reflection.qual.GetClass  - url launched
+INFO    2023-08-24 16:59:52,618 [main] org.checkerframework.common.reflection.qual.GetClass  - <log end>
+INFO    2023-08-24 16:59:52,618 [main] org.checkerframework.common.reflection.qual.GetClass  - Log end time is Thu_Aug_24_16_59_52_CEST_2023.jpg

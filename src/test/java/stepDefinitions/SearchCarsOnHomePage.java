@@ -1,9 +1,10 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
+import org.testng.Assert;
 import pageactions.CarsGuideHomePageActions;
 import pageactions.SearchCarsPageActions;
 import utilities.ConfigUtils;
@@ -28,9 +29,23 @@ public class SearchCarsOnHomePage {
     }
 
 
-//############ Step definitions	#########################
+//############ Step definations	#########################
 
-    @And("select car brand on homepage {}")
+    @Given("I am on the home page {string}")
+    public void i_am_on_the_home_page(String strwebsiteURL) {
+
+        System.out.println("test data" + datamap);
+    }
+
+    @When("User at home page with title {string}")
+    public void User_at_home_page_with_title(String expected) {
+
+        String actual = carsGuideHomePageActions.SignIntitle();
+        Assert.assertEquals(actual, expected);
+
+    }
+
+    @And("select car brand on homepage {string}")
     public void select_car_brand_on_homepage(String strCarBrand) {
 
         searchCarsPageActions.selectCarBrand(strCarBrand);
@@ -38,9 +53,8 @@ public class SearchCarsOnHomePage {
 
     }
 
-    @And("select model on homepage {}")
+    @And("select model on homepage {string}")
     public void select_model_on_homepage(String strModel) {
-
         searchCarsPageActions.selectCarModel(strModel);
         ConfigUtils.log.info("User select the car Model");
     }
@@ -52,13 +66,13 @@ public class SearchCarsOnHomePage {
 
     }
 
-    @Then("user should see a list of searched cars using hompage search")
+    @Then("i should see a list of searched cars using hompage search")
     public void i_should_see_a_list_of_searched_cars_using_hompage_search() {
 
         System.out.println("Car list found");
     }
 
-    @And("the page title should is {}")
+    @And("the page title should is {string}")
     public void the_page_title_should_is(String expected) {
 
         String actual = DriverUtils.driver.getTitle();
@@ -66,8 +80,8 @@ public class SearchCarsOnHomePage {
         Assert.assertEquals(actual, expected);
     }
 
-    @When("user scrolls the window till popular review")
-    public void user_scrolls_the_window_till_popular_review() {
+    @When("user scrolls the window till populer review")
+    public void user_scrolls_the_window_till_populer_review() {
         carsGuideHomePageActions.Scroll();
     }
 
@@ -81,8 +95,8 @@ public class SearchCarsOnHomePage {
     @And("user verify the page title for {string}")
     public void user_verify_the_page_title_for_car(String car) {
 
-       carsGuideHomePageActions.GetCarTitle(car);
-
+        String varCarTitle = carsGuideHomePageActions.GetCarTitle();
+        System.out.println("Car title for " + car + " is " + varCarTitle);
     }
 
     @Then("user try to search for {string}")
@@ -91,9 +105,10 @@ public class SearchCarsOnHomePage {
 
     }
 
+
     @And("user scrolls to the button of the page")
     public void user_scrolls_to_the_button_of_the_page() {
-        DriverUtils.ScrollToBottom();
+        DriverUtils.ScrollToButtom();
         System.out.println("User at the button of the page");
     }
 
@@ -102,6 +117,4 @@ public class SearchCarsOnHomePage {
         carsGuideHomePageActions.HomePageFooters();
 
     }
-
-
 }

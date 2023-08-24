@@ -1,9 +1,12 @@
 
+@BuyingGuide
 Feature: Test to check the different buying guides for a user
 
-  Background: Navigate to carguide site
-    Given user is on home page of https://www.carsguide.com.au/ with title Sign up / Sign in
+  # here you will write your user story
 
+  Background: Navigate to carguide site
+    Given I am on the home page "https://www.carsguide.com.au/"
+    When User at home page with title "Sign up / Sign in"
 
   Scenario: To check different buying guides on the homepage
     And  user scrolls the window till Buying Guides
