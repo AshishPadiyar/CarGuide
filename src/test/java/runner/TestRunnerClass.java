@@ -12,6 +12,7 @@ import java.io.IOException;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
+                 tags = "@HomePageTabs",
         monochrome = true,
         glue = "stepDefinitions", stepNotifications = true,
         plugin = {
